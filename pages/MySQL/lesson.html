@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>练习题34道 | Hello VuePress</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="Just playing around">
+    <link rel="preload" href="/assets/css/0.styles.80b48331.css" as="style"><link rel="preload" href="/assets/js/app.b653f105.js" as="script"><link rel="preload" href="/assets/js/2.99d1a617.js" as="script"><link rel="preload" href="/assets/js/33.d052232e.js" as="script"><link rel="prefetch" href="/assets/js/10.800b72c9.js"><link rel="prefetch" href="/assets/js/11.57accf41.js"><link rel="prefetch" href="/assets/js/12.13fbcf8c.js"><link rel="prefetch" href="/assets/js/13.4d2d664d.js"><link rel="prefetch" href="/assets/js/14.910991c0.js"><link rel="prefetch" href="/assets/js/15.1313f354.js"><link rel="prefetch" href="/assets/js/16.6db479e6.js"><link rel="prefetch" href="/assets/js/17.2f448bc3.js"><link rel="prefetch" href="/assets/js/18.30dabd53.js"><link rel="prefetch" href="/assets/js/19.d2eaaaad.js"><link rel="prefetch" href="/assets/js/20.89b76482.js"><link rel="prefetch" href="/assets/js/21.c3198162.js"><link rel="prefetch" href="/assets/js/22.f98eeba2.js"><link rel="prefetch" href="/assets/js/23.b9aba8a3.js"><link rel="prefetch" href="/assets/js/24.3e956e2a.js"><link rel="prefetch" href="/assets/js/25.b1b78e1c.js"><link rel="prefetch" href="/assets/js/26.cf1a8b48.js"><link rel="prefetch" href="/assets/js/27.d5bfcc65.js"><link rel="prefetch" href="/assets/js/28.953cb79b.js"><link rel="prefetch" href="/assets/js/29.8a492853.js"><link rel="prefetch" href="/assets/js/3.3388cb9e.js"><link rel="prefetch" href="/assets/js/30.b01648fa.js"><link rel="prefetch" href="/assets/js/31.4e91fc6c.js"><link rel="prefetch" href="/assets/js/32.4bbadcf2.js"><link rel="prefetch" href="/assets/js/34.33e965c9.js"><link rel="prefetch" href="/assets/js/35.0ddaddcd.js"><link rel="prefetch" href="/assets/js/36.edb41847.js"><link rel="prefetch" href="/assets/js/37.8e9c2d1f.js"><link rel="prefetch" href="/assets/js/4.dc746784.js"><link rel="prefetch" href="/assets/js/5.d434ae10.js"><link rel="prefetch" href="/assets/js/6.7eb90bfc.js"><link rel="prefetch" href="/assets/js/7.041e9117.js"><link rel="prefetch" href="/assets/js/8.9ce2df1b.js"><link rel="prefetch" href="/assets/js/9.e3ac39ca.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.80b48331.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Hello VuePress</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/pages/JavaScript/" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue学习" class="dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Vue/入门.html" class="nav-link">
+  Vue入门
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Vue/进阶.html" class="nav-link">
+  Vue进阶
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JAVA学习" class="dropdown-title"><span class="title">JAVA</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Vue/入门.html" class="nav-link">
+  JAVA
+</a></li><li class="dropdown-item"><!----> <a href="/pages/JAVA/JavaWeb/" class="nav-link">
+  JAVAWeb
+</a></li><li class="dropdown-item"><!----> <a href="/pages/JAVA/数据结构与算法/" class="nav-link">
+  数据结构与算法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL学习" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/MySQL/" class="nav-link router-link-active">
+  MySQL
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/pages/JavaScript/" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue学习" class="dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Vue/入门.html" class="nav-link">
+  Vue入门
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Vue/进阶.html" class="nav-link">
+  Vue进阶
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JAVA学习" class="dropdown-title"><span class="title">JAVA</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Vue/入门.html" class="nav-link">
+  JAVA
+</a></li><li class="dropdown-item"><!----> <a href="/pages/JAVA/JavaWeb/" class="nav-link">
+  JAVAWeb
+</a></li><li class="dropdown-item"><!----> <a href="/pages/JAVA/数据结构与算法/" class="nav-link">
+  数据结构与算法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL学习" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/MySQL/" class="nav-link router-link-active">
+  MySQL
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/pages/JavaScript/" class="sidebar-heading clickable"><span>JavaScript</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/JavaScript/day10.html" class="sidebar-link">对象&amp;函数</a></li><li><a href="/pages/JavaScript/day11.html" class="sidebar-link">知道</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/pages/Vue/" class="sidebar-heading clickable"><span>Vue学习</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/Vue/入门.html" class="sidebar-link">Vue入门</a></li><li><a href="/pages/Vue/进阶.html" class="sidebar-link">Vue进阶</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/pages/JAVA/JavaWeb/" class="sidebar-heading clickable"><span>JavaWeb</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/JAVA/JavaWeb/Servlet&amp;Request&amp;案例.html" class="sidebar-link">Servlet&amp;Request</a></li><li><a href="/pages/JAVA/JavaWeb/Response.html" class="sidebar-link">Response</a></li><li><a href="/pages/JAVA/JavaWeb/Cookie&amp;Session笔记.html" class="sidebar-link">Cookie&amp;Session</a></li><li><a href="/pages/JAVA/JavaWeb/EL&amp;JSTL笔记.html" class="sidebar-link">EL&amp;STL</a></li><li><a href="/pages/JAVA/JavaWeb/Filter&amp;Listener笔记.html" class="sidebar-link">Filter&amp;Listener</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/pages/JAVA/数据结构与算法/" class="sidebar-heading clickable"><span>数据结构与算法</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/JAVA/数据结构与算法/第一章.html" class="sidebar-link">一、内容介绍</a></li><li><a href="/pages/JAVA/数据结构与算法/第二章.html" class="sidebar-link">二、数据结构和算法关系</a></li><li><a href="/pages/JAVA/数据结构与算法/第三章.html" class="sidebar-link">三、稀疏数组和队列</a></li><li><a href="/pages/JAVA/数据结构与算法/第四章.html" class="sidebar-link">四、链表</a></li><li><a href="/pages/JAVA/数据结构与算法/第五章.html" class="sidebar-link">五、栈</a></li><li><a href="/pages/JAVA/数据结构与算法/第六章.html" class="sidebar-link">六、递归</a></li><li><a href="/pages/JAVA/数据结构与算法/第七章.html" class="sidebar-link">七、排序</a></li><li><a href="/pages/JAVA/数据结构与算法/第八章.html" class="sidebar-link">八、查找</a></li><li><a href="/pages/JAVA/数据结构与算法/第九章.html" class="sidebar-link">九、哈希表</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/pages/MySQL/" class="sidebar-heading clickable router-link-active open"><span>MySQL</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/MySQL/day01.html" class="sidebar-link">MySQL基本命令</a></li><li><a href="/pages/MySQL/day02.html" class="sidebar-link">MySQL入门</a></li><li><a href="/pages/MySQL/day03.html" class="sidebar-link">MySQL基础</a></li><li><a href="/pages/MySQL/day04.html" class="sidebar-link">MySQL进阶</a></li><li><a href="/pages/MySQL/lesson.html" class="active sidebar-link">练习题34道</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/MySQL/lesson.html#_1、取得每个部门最高薪水的人员名称" class="sidebar-link">1、取得每个部门最高薪水的人员名称</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/lesson.html#_2、哪些人的薪水在部门的平均薪水之上" class="sidebar-link">2、哪些人的薪水在部门的平均薪水之上</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/lesson.html#_3、取得部门中（所有人的）平均的薪水等级" class="sidebar-link">3、取得部门中（所有人的）平均的薪水等级</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/lesson.html#_4、不准用组函数（max），取得最高薪水" class="sidebar-link">4、不准用组函数（Max），取得最高薪水</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/lesson.html#_5、取得平均薪水最高的部门的部门编号" class="sidebar-link">5、取得平均薪水最高的部门的部门编号</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/lesson.html#_6、取得平均薪水最高的部门的部门名称" class="sidebar-link">6、取得平均薪水最高的部门的部门名称</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/lesson.html#_7、求平均薪水的等级最低的部门的部门名称" class="sidebar-link">7、求平均薪水的等级最低的部门的部门名称</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/lesson.html#_8、取得比普通员工-员工代码没有在mgr字段上出现的-的最高薪水还要高的领导人姓名" class="sidebar-link">8、取得比普通员工(员工代码没有在mgr字段上出现的)的最高薪水还要高的领导人姓名</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/lesson.html#_9、取得薪水最高的前五名员工" class="sidebar-link">9、取得薪水最高的前五名员工</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/lesson.html#_10、取得薪水最高的第六到第十名员工" class="sidebar-link">10、取得薪水最高的第六到第十名员工</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/lesson.html#_11、取得最后入职的5名员工" class="sidebar-link">11、取得最后入职的5名员工</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/lesson.html#_12、取得每个薪水等级有多少员工" class="sidebar-link">12、取得每个薪水等级有多少员工</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/lesson.html#_13、面试题" class="sidebar-link">13、面试题</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/lesson.html#_14、列出所有员工及领导的姓名" class="sidebar-link">14、列出所有员工及领导的姓名</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/lesson.html#_15、列出受雇日期早于其直接上级的所有员工的编号-姓名-部门名称" class="sidebar-link">15、列出受雇日期早于其直接上级的所有员工的编号,姓名,部门名称</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/lesson.html#_16、列出部门名称和这些部门的员工信息-同时列出那些没有员工的部门" class="sidebar-link">16、列出部门名称和这些部门的员工信息,同时列出那些没有员工的部门.</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="练习题34道"><a href="#练习题34道" class="header-anchor">#</a> 练习题34道</h1> <h2 id="_1、取得每个部门最高薪水的人员名称"><a href="#_1、取得每个部门最高薪水的人员名称" class="header-anchor">#</a> 1、取得每个部门最高薪水的人员名称</h2> <div class="language- extra-class"><pre><code>思路
+
+1.获取每个部门的最高工资 显示部门编号和最高工资
+ select deptno,max(sal) maxSal from emp group by deptno
+2.使用步骤1的查询结果，为临时表temptable 进行多表查询 并使用员工的deptno 和 sal与temptable 同时消除笛卡尔积
+ select * from emp e inner join temptable tt on e.sal=tt.maxSal and e.deptno=tt.deptno
+3.使用步骤1的查询结果替换temptable
+ select e.ename,e.sal,e.deptno from emp e inner join (select deptno,max(sal) maxSal from emp group by Deptno) tt on e.sal=tt.maxSal and e.deptno=tt.deptno
++----------------+
+BLAKE	2850.00	30
+SCOTT	3000.00	20
+KING	5000.00	10
+FORD	3000.00	20
+</code></pre></div><h2 id="_2、哪些人的薪水在部门的平均薪水之上"><a href="#_2、哪些人的薪水在部门的平均薪水之上" class="header-anchor">#</a> 2、哪些人的薪水在部门的平均薪水之上</h2> <div class="language- extra-class"><pre><code>思路
+
+1.获取部门的平均薪水
+ select deptno ,avg(sal) avgSal from emp group by deptno
+2.使用步骤1的查询结果，为临时表temptable 进行多表查询 并使用员工的deptno等于temptable表中的deptno 和 sal 大于 temptable表中的avgsal 同时消除笛卡尔积
+   select * from emp e inner join temptable tt on e.deptno=tt.deptno and e.sal&gt;tt.avgSal
+3.使用步骤1的语句替换步骤2中的temptable
+  select * from emp e inner join (select deptno ,avg(sal) avgSal from emp group by deptno) tt on e.deptno=tt.deptno and e.sal&gt;tt.avgSal
++-----------------+
+ALLEN	30	1600.00
+JONES	20	2975.00
+BLAKE	30	2850.00
+SCOTT	20	3000.00
+KING	10	5000.00
+FORD	20	3000.00
+</code></pre></div><h2 id="_3、取得部门中（所有人的）平均的薪水等级"><a href="#_3、取得部门中（所有人的）平均的薪水等级" class="header-anchor">#</a> 3、取得部门中（所有人的）平均的薪水等级</h2> <div class="language- extra-class"><pre><code>思路
+1.获取员工以及员工的薪水等级
+  select * from emp e inner join salgrade sg on e.sal&gt;=sg.losal and e.sal&lt;=sg.hisal
+2.根据部门编号分组并且计算平均的薪水等级
+  select e.deptno,avg(sg.grade) from emp e inner join salgrade sg on e.sal&gt;=sg.losal and e.sal&lt;=sg.hisal group by e.deptno
++---------+
+10	3.6667
+20	2.8000
+30	2.5000
+</code></pre></div><h2 id="_4、不准用组函数（max），取得最高薪水"><a href="#_4、不准用组函数（max），取得最高薪水" class="header-anchor">#</a> 4、不准用组函数（Max），取得最高薪水</h2> <p>思路
+1.根据工资进行降序排列 然后显示所有信息
+select sal from emp order by sal desc
+2.在步骤1的基础上，获取第一条记录
+select sal from emp order by sal desc limit 0,1
++--+
+5000</p> <h2 id="_5、取得平均薪水最高的部门的部门编号"><a href="#_5、取得平均薪水最高的部门的部门编号" class="header-anchor">#</a> 5、取得平均薪水最高的部门的部门编号</h2> <p>思路
+1.获取部门的平均工资
+select deptno ,avg(sal) from emp group by deptno
+2.在步骤1的基础上添加排序 降序排列
+select deptno ,avg(sal) from emp group by deptno order by avg(sal) desc
+3. 在步骤2的基础上获取第一条记录
+select deptno ,avg(sal) from emp group by deptno order by avg(sal) desc limit 0,1
++-------------+
+10	2916.666667</p> <h2 id="_6、取得平均薪水最高的部门的部门名称"><a href="#_6、取得平均薪水最高的部门的部门名称" class="header-anchor">#</a> 6、取得平均薪水最高的部门的部门名称</h2> <p>思路
+1.链接两张表
+select * from emp e inner join dept d on e.deptno=d.deptno
+2.分组看各部门薪水
+select e.deptno,max(d.dname),avg(sal) from emp e inner join dept d on e.deptno=d.deptno group by e.deptno
+3.排序
+select e.deptno,max(d.dname),avg(sal) from emp e inner join dept d on e.deptno=d.deptno group by e.deptno order by avg(sal) desc
+4.取得薪水最高的部门
+select e.deptno,max(d.dname),avg(sal) from emp e inner join dept d on e.deptno=d.deptno group by e.deptno order by avg(sal) desc limit 0,1</p> <div class="language- extra-class"><pre><code>DEPTNO	MAX(d.DNAME)	AVG(e.sal)
+10		ACCOUNTING		2916.666667
+</code></pre></div><h2 id="_7、求平均薪水的等级最低的部门的部门名称"><a href="#_7、求平均薪水的等级最低的部门的部门名称" class="header-anchor">#</a> 7、求平均薪水的等级最低的部门的部门名称</h2> <p>思路
+1.获取部门的平均工资 并且降序
+select e.deptno,avg(e.sal) from emp e group by e.deptno order by avg(e.sal)</p> <div class="language- extra-class"><pre><code>2.使用步骤2的结果作为条件，查询部门编号与步骤2的结果相同的部门名称
+  select d.dname from emp e inner join dept d on e.deptno=d.deptno group by e.deptno order by avg(e.sal) limit 0,1
+
+DNAME
+SALES
+</code></pre></div><h2 id="_8、取得比普通员工-员工代码没有在mgr字段上出现的-的最高薪水还要高的领导人姓名"><a href="#_8、取得比普通员工-员工代码没有在mgr字段上出现的-的最高薪水还要高的领导人姓名" class="header-anchor">#</a> 8、取得比普通员工(员工代码没有在mgr字段上出现的)的最高薪水还要高的领导人姓名</h2> <p>思路
+1.获取所有的领导的编号
+select mgr from emp where mgr is not null group by mgr
+2.根据步骤1的查询结果，获取普通员工的最高工资，empno 不在步骤的查询结果里的
+select max(sal) from emp where empno not in(select mgr from emp where mgr is not null group by mgr )
+3.使用步骤1的查询结果作为条件获取 empno在这个结果中的所有记录以及sal要大于步骤2的查询结果的所有数据
+select ename from emp where sal&gt;(select max(sal) from emp where empno not in(select mgr from emp where mgr is not null group by mgr ))</p> <div class="language- extra-class"><pre><code>max(sal)
+1600.00
+</code></pre></div><h2 id="_9、取得薪水最高的前五名员工"><a href="#_9、取得薪水最高的前五名员工" class="header-anchor">#</a> 9、取得薪水最高的前五名员工</h2> <p>思路
+1.根据工资进行降序排列
+select * from emp  order by sal desc
+2.在步骤1的基础上获取前5条记录
+select * from emp  order by sal desc limit 0,5</p> <div class="language- extra-class"><pre><code>EMPNO	ENAME	JOB			MGR		HIREDATE	SAL			COMM	DEPTNO
+7839	KING	PRESIDENT			1981-11-17	5000.00				10
+7902	FORD	ANALYST		7566	1981-12-03	3000.00				20
+7788	SCOTT	ANALYST		7566	1987-04-19	3000.00				20
+7566	JONES	MANAGER		7839	1981-04-02	2975.00				20
+7698	BLAKE	MANAGER		7839	1981-05-01	2850.00				30
+</code></pre></div><h2 id="_10、取得薪水最高的第六到第十名员工"><a href="#_10、取得薪水最高的第六到第十名员工" class="header-anchor">#</a> 10、取得薪水最高的第六到第十名员工</h2> <p>思路
+1.根据工资进行降序排列
+select * from emp  order by sal desc
+2.在步骤1的基础上获取前6到10的记录
+select * from emp  order by sal desc limit 5,5</p> <div class="language- extra-class"><pre><code>EMPNO	ENAME	JOB			MGR		HIREDATE	SAL		COMM	DEPTNO
+7782	CLARK	MANAGER		7839	1981-06-09	2450.00			10
+7499	ALLEN	SALESMAN	7698	1981-02-20	1600.00	300.00	30
+7844	TURNER	SALESMAN	7698	1981-09-08	1500.00	0.00	30
+7934	MILLER	CLERK		7782	1982-01-23	1300.00			10
+7521	WARD	SALESMAN	7698	1981-02-22	1250.00	500.00	30
+</code></pre></div><h2 id="_11、取得最后入职的5名员工"><a href="#_11、取得最后入职的5名员工" class="header-anchor">#</a> 11、取得最后入职的5名员工</h2> <p>思路
+1.根据入职时间 降序排列
+select * from emp order by hiredate desc
+2.在步骤1的基础上获取前五条记录
+select * from emp order by hiredate desc limit 0,5</p> <div class="language- extra-class"><pre><code> EMPNO	ENAME	JOB		MGR		HIREDATE	SAL			COMM	DEPTNO
+ 7876	ADAMS	CLERK	7788	1987-05-23	1100.00				20
+ 7788	SCOTT	ANALYST	7566	1987-04-19	3000.00				20
+ 7934	MILLER	CLERK	7782	1982-01-23	1300.00				10
+ 7900	JAMES	CLERK	7698	1981-12-03	950.00				30
+ 7902	FORD	ANALYST	7566	1981-12-03	3000.00				20
+</code></pre></div><h2 id="_12、取得每个薪水等级有多少员工"><a href="#_12、取得每个薪水等级有多少员工" class="header-anchor">#</a> 12、取得每个薪水等级有多少员工</h2> <p>思路
+1.获取所有员工的薪水等级
+select * from emp e inner join salgrade sg on e.sal&gt;=sg.losal and e.sal&lt;=sg.hisal
+2. 在步骤1的基础上根据工资等级进行分组然后同时数量
+select sg.grade,count(empno) from emp e inner join salgrade sg on e.sal&gt;=sg.losal and e.sal&lt;=sg.hisal group by sg.grade</p> <div class="language- extra-class"><pre><code>GRADE	COUNT(EMPNO)
+1			3
+2			3
+3			2
+4			5
+5			1
+</code></pre></div><h2 id="_13、面试题"><a href="#_13、面试题" class="header-anchor">#</a> 13、面试题</h2> <h3 id="问题1-找出没选过-黎明-老师的所有学生姓名。"><a href="#问题1-找出没选过-黎明-老师的所有学生姓名。" class="header-anchor">#</a> 问题1.找出没选过“黎明”老师的所有学生姓名。</h3> <p>思路
+1.获取黎明老师所教的课的编号
+select  CNO from c where CTEACHER='黎明'
+2. 根据步骤1的查询结果作为条件 获取所有选过黎明老师课程的学生编号
+select  sno from sc where cno=(select  CNO from c where CTEACHER='黎明')
+3. 根据步骤2的查询结果获取所有学生编号不在这个范围内的所有学生
+select * from s where sno not in( select  sno from sc where cno=(select  CNO from c where CTEACHER='黎明'))</p> <h3 id="问题2-列出2门以上（含2门）不及格学生姓名及平均成绩。"><a href="#问题2-列出2门以上（含2门）不及格学生姓名及平均成绩。" class="header-anchor">#</a> 问题2:列出2门以上（含2门）不及格学生姓名及平均成绩。</h3> <p>思路
+1.获取所有的低于60分记录
+select * from sc where scgrade &lt;60
+2.在步骤1的基础之上根据学生编号进行分组然后筛选掉统计数量低于2的所有记录,
+这就可以获取到所有不及格科目大于等于2的所有学生编号
+select sno from sc where scgrade &lt;60 group by sno having count(sno)&gt;=2
+3.使用学生表和科目进行多表查询然后根据学生编号分组取平均成绩
+select s.sno,s.sname,avg(sc.scgrade) from s inner join sc on s.sno=sc.sno group by s.sno
+4.在步骤3的基础上添加where条件 获取sno为步骤2查询结果了
+select
+s.sno,s.sname,avg(sc.scgrade)
+from
+s
+inner join
+sc
+on
+s.sno=sc.sno
+where s.sno in(select sno from sc where scgrade &lt;60 group by sno having count(sno)&gt;=2)
+group by s.sno</p> <div class="language- extra-class"><pre><code> 问题3:即学过1号课程又学过2号课所有学生的姓名。
+   思路
+     1.获取所有学习过课程1  或者 是学习过课程2的所有信息
+       select * from sc where cno =1 or cno=2
+     2.在步骤1的基础上使用sno进行分组 ，并且使用having 筛选掉统计数量不是2的所有记录  （及学习过1也学习过2的所有记录）
+       select sno from sc where cno =1 or cno=2 group by sno having count(sno)&gt;=2
+     3.使用步骤2的查询结果作为条件，查询s表中所有sno在这个范围内的所有学生
+       select * from s where sno in ( select sno from sc where cno =1 or cno=2 group by sno having count(sno)&gt;=2)
+</code></pre></div><h2 id="_14、列出所有员工及领导的姓名"><a href="#_14、列出所有员工及领导的姓名" class="header-anchor">#</a> 14、列出所有员工及领导的姓名</h2> <p>思路
+1.需要使用2个emp表同时做多表查询 ，1个emp是员工表1个emp是领导的表
+select * from emp e1 inner join emp e2
+2.在步骤1的基础上使用e1(员工)表中的mgr与e2（领导）表中的empno 消除笛卡尔积
+select * from emp e1 inner join emp e2  on e1.mgr=e2.empno
+3.由于e1表中少显示了一条数据是没有领导的这条因此需要使用外连接
+select e1.ename,e2.ename from emp e1 left join emp e2  on e1.mgr=e2.empno</p> <div class="language- extra-class"><pre><code>ename	ename(1)
+SMITH	FORD
+ALLEN	BLAKE
+WARD	BLAKE
+JONES	KING
+MARTIN	BLAKE
+BLAKE	KING
+CLARK	KING
+SCOTT	JONES
+KING	
+TURNER	BLAKE
+ADAMS	SCOTT
+JAMES	BLAKE
+FORD	JONES
+MILLER	CLARK
+</code></pre></div><h2 id="_15、列出受雇日期早于其直接上级的所有员工的编号-姓名-部门名称"><a href="#_15、列出受雇日期早于其直接上级的所有员工的编号-姓名-部门名称" class="header-anchor">#</a> 15、列出受雇日期早于其直接上级的所有员工的编号,姓名,部门名称</h2> <p>思路
+1.需要使用2个emp表同时做多表查询 ，1个emp是员工表1个emp是领导的表
+select * from emp e1 inner join emp e2
+2.在步骤1的基础上使用e1(员工)表中的mgr与e2（领导）表中的empno 消除笛卡尔积
+select * from emp e1 left join emp e2 on e1.mgr=e2.empno
+3.在步骤2的基础上添加条件筛选入职时间比直接领导要早的人
+select * from emp e1 inner join emp e2 on e1.mgr=e2.empno and e1.hiredate&lt;e2.hiredate
+4.在步骤3的基础上添加dept进行多表查询
+select e1.empno,e1.ename,d.dname from emp e1 inner join emp e2 on e1.mgr=e2.empno and e1.hiredate&lt;e2.hiredate inner join dept d on e1.deptno=d.deptno</p> <div class="language- extra-class"><pre><code>empno	ename	dname
+7369	SMITH	RESEARCH
+7499	ALLEN	SALES
+7521	WARD	SALES
+7566	JONES	RESEARCH
+7698	BLAKE	SALES
+7782	CLARK	ACCOUNTING
+</code></pre></div><h2 id="_16、列出部门名称和这些部门的员工信息-同时列出那些没有员工的部门"><a href="#_16、列出部门名称和这些部门的员工信息-同时列出那些没有员工的部门" class="header-anchor">#</a> 16、列出部门名称和这些部门的员工信息,同时列出那些没有员工的部门.</h2> <p>思路
+1.使用外连接查询emp和dept表
+select d.dname,e.* from emp e right join dept d on e.deptno=d.deptno</p> <div class="language- extra-class"><pre><code>dname	EMPNO		ENAME	JOB			MGR		HIREDATE	SAL			COMM	DEPTNO
+RESEARCH	7369	SMITH	CLERK		7902	1980-12-17	800.00				20
+SALES		7499	ALLEN	SALESMAN	7698	1981-02-20	1600.00		300.00	30
+SALES		7521	WARD	SALESMAN	7698	1981-02-22	1250.00		500.00	30
+RESEARCH	7566	JONES	MANAGER		7839	1981-04-02	2975.00				20
+SALES		7654	MARTIN	SALESMAN	7698	1981-09-28	1250.00		1400.00	30
+SALES		7698	BLAKE	MANAGER		7839	1981-05-01	2850.00				30
+ACCOUNTING	7782	CLARK	MANAGER		7839	1981-06-09	2450.00				10
+RESEARCH	7788	SCOTT	ANALYST		7566	1987-04-19	3000.00				20
+ACCOUNTING	7839	KING	PRESIDENT			1981-11-17	5000.00				10
+SALES		7844	TURNER	SALESMAN	7698	1981-09-08	1500.00		0.00	30
+RESEARCH	7876	ADAMS	CLERK		7788	1987-05-23	1100.00				20
+SALES		7900	JAMES	CLERK		7698	1981-12-03	950.00				30
+RESEARCH	7902	FORD	ANALYST		7566	1981-12-03	3000.00				20
+ACCOUNTING	7934	MILLER	CLERK		7782	1982-01-23	1300.00				10
+OPERATIONS							
+</code></pre></div><p>17、列出至少有5个员工的所有部门
+思路</p> <ol><li>使用员工和部门进行多表查询
+select * from emp e inner join dept d on e.deptno=d.deptno
+2.在步骤1的基础之上使用emp表中的deptno进行分组
+select * from emp e inner join dept d on e.deptno=d.deptno group by e.deptno
+3.在步骤2的基础上添加分组后的条件筛选 过滤掉人数不足5人的部门
+select * from emp e inner join dept d on e.deptno=d.deptno group by e.deptno having count(empno)&gt;=5
+4.在步骤3的基础上修改显示里显示部门编号和部门名称和部门人数
+select e.deptno,max(d.dname),count(empno) from emp e inner join dept d on e.deptno=d.deptno group by e.deptno having count(empno)&gt;=5</li></ol> <p>18、列出薪金比&quot;SMITH&quot;多的所有员工信息.
+思路
+1.获取SMITH的工资
+select sal from emp where ename='SMITH'
+2.使用步骤1的查询结果作为条件查询工资比步骤1的查询结果还要多的所有员工
+select * from emp where sal&gt;( select sal from emp where ename='SMITH')</p> <p>19、列出所有&quot;CLERK&quot;(办事员)的姓名及其部门名称,部门的人数.
+思路
+1.使用emp和dept 进行多表查询并消除笛卡尔积
+select * from emp e inner join dept d on e.deptno=d.deptno
+2.在步骤1的基础上添加条件筛选，获取所有的职位为CLERK的所有员工姓名和部门名称
+select e.ename,d.dname from emp e inner join dept d on e.deptno=d.deptno  where e.job='CLERK'
+3.使用emp表统计每个部门下一共拥有多少人并获取部门的编号
+select deptno,count(empno)countNum  from emp group by deptno
+4.将步骤3的查询结果看成是临时表temptable然后和步骤2进行多表查询 并使用emp表中的deptno和temptable表中的deptno消除笛卡尔积
+select e.ename,d.dname,tt.countNum from emp e inner join dept d on e.deptno=d.deptno inner join temptable tt on e.deptno=tt.deptno  where e.job='CLERK'<br>
+5.使用步骤3的语句替换步骤4中的temptable
+select e.ename,d.dname,tt.countNum from emp e inner join dept d on e.deptno=d.deptno inner join (select deptno,count(empno)countNum  from emp group by deptno) tt on e.deptno=tt.deptno  where e.job='CLERK'</p> <p>20、列出最低薪金大于1500的各种工作及从事此工作的全部雇员人数.</p> <p>思路
+1.根据职位进行分组显示职位名
+select job from emp group by job
+2.在步骤1的基础上添加对员工数量的统计
+select job,count(empno) from emp group by job
+3.在步骤2的基础上使用分组后的条件筛选，过滤掉最低工资低于1500的职位
+select job,count(empno) from emp group by job having min(sal)&gt;1500</p> <p>21、列出在部门&quot;SALES&quot;&lt;销售部&gt;工作的员工的姓名,假定不知道销售部的部门编号.
+思路
+1.获取 SALES 部的部门编号
+select deptno from dept where dname='SALES'
+2.根据步骤1的查询结果获取emp表中deptno为步骤1的结果的所有数据
+select ename from emp where deptno=( select deptno from dept where dname='SALES')</p> <p>22、列出薪金高于公司平均薪金的所有员工,所在部门,上级领导,雇员的工资等级.
+思路
+1.获取所有的员工姓名 部门名称 上级领导
+select * from emp e1 left join emp e2 on e1.mgr=e2.empno inner join dept d on e1.deptno=d.deptno<br>
+2.在步骤1的基础上添加salgrade的多表查询并消除笛卡尔积显示工资的等级
+select * from emp e1 left join emp e2 on e1.mgr=e2.empno inner join dept d on e1.deptno=d.deptno inner join salgrade sg on e1.sal&gt;=sg.losal and e1.sal&lt;=sg.hisal
+3.获取公司的平均工资
+select avg(sal) from emp</p> <div class="language- extra-class"><pre><code> 4.在步骤2的基础上获取所有工资高于步骤3的查询结果的所有记录
+   select e1.ename,ifnull(e2.ename,'没有领导'),d.dname,sg.grade from emp e1 left join emp e2 on e1.mgr=e2.empno inner join dept d on e1.deptno=d.deptno inner join salgrade sg on e1.sal&gt;=sg.losal and e1.sal&lt;=sg.hisal where e1.sal&gt;(select avg(sal) from emp)  
+</code></pre></div><p>23、列出与&quot;SCOTT&quot;从事相同工作的所有员工及部门名称.
+思路
+1.获取SCOTT的工作（job）
+select job from emp where ename='SCOTT'</p> <div class="language- extra-class"><pre><code>  2.使用emp和dept进行多表查询并消除笛卡尔积
+     select * from emp e inner join dept d on e.deptno=d.deptno
+ 
+  3. 在步骤2的基础之上使用步骤1的查询语句作为条件查询job为步骤1的查询结果的所有记录
+     select e.ename,d.dname from emp e inner join dept d on e.deptno=d.deptno where job =(select job from emp where ename='SCOTT')
+</code></pre></div><p>24、列出薪金等于部门30中员工的薪金的其他员工的姓名和薪金.
+思路
+1. 获取部门30中的员工工资
+select sal from emp where deptno=30
+2.使用步骤1的查询结果作为条件，获取员工的工资在步骤1的查询的这个范围内的所有员工 ,过滤掉部门30的员工（没有查询结果）
+select * from emp where sal in ( select sal from emp where deptno=30) and deptno !=30</p> <p>25、列出薪金高于在部门30工作的所有员工的薪金的员工姓名和薪金.部门名称.
+思路
+1. 获取 部门30中的最高工资 （高于这个值就是高于部门30中所有人）
+select max(sal) from emp where deptno=30
+2. 使用emp和dept进行多表查询 并消除笛卡尔积
+select * from emp e inner join dept d on e.deptno =d.deptno
+3.在步骤2的基础上使用步骤1的语句作为条件，查询工资高于步骤1的结果的所有记录
+select e.ename,e.sal,d.dname from emp e inner join dept d on e.deptno =d.deptno where sal&gt;(select max(sal) from emp where deptno=30)</p> <p>26、列出在每个部门工作的员工数量,平均工资和平均服务期限.
+思路
+1.根据部门编号进行分组然后统计 员工人数和平均工资
+select count(empno),avg(sal)  from emp  group by deptno
+2.使用to_days函数获取每个员工的入职年限  . avg((to_days(now())-to_days(HIREDATE))/365) 根据当前日期的到公元元年的天数-员工入职时间到公元元年的天数然后除365 获取的员工入职到现在一共多少年 然后获取平均值
+select count(empno),avg(sal),avg((to_days(now())-to_days(hiredate))/365)  from emp  group by deptno</p> <p>27、列出所有员工的姓名、部门名称和工资。
+思路
+1.使用emp和dept直接进行多表查询
+select e.ename,e.sal,d.dname from emp e inner join dept d on e.deptno=d.deptno</p> <p>28、列出所有部门的详细信息和人数</p> <p>思路
+1.使用emp和dept进行多表查询，然后根据dept 表中的deptno进行分组，然后根据emp表中的empno进行统计（使用外连接）
+由于dept表中的deptno是分组聚合的因此显示列中的dnamne 和loc也必须是要聚合，可以使用聚合函数也可以添加到分组中
+select d.deptno,max(d.dname),min(d.loc),count(e.empno) from emp e right join dept d on e.deptno=d.deptno group by d.deptno</p> <p>29、列出各种工作的最低工资及从事此工作的雇员姓名
+思路
+1.获取各种工作的最低工资
+select job ,min(sal) minSal  from emp group by job
+2.将步骤1的查询结果当成临时表temptable 与emp 进行多表查询，使用emp中的job和sal与temptable表中的job和minsal消除笛卡尔积
+select * from emp e inner join temptable tt on e.job=tt.job and e.sal=tt.minSal
+3.使用步骤1的语句替换步骤2中的temptable
+select * from emp e inner join ( select job ,min(sal) minSal  from emp group by job) tt on e.job=tt.job and e.sal=tt.minSal</p> <p>30、列出各个部门的MANAGER(领导)的最低薪金</p> <p>思路
+1.获取所有的MANAGER的员工
+select * from emp where job ='MANAGER'
+2.在步骤1的基础上添加对部门的分组 然后显示最低工资
+select deptno,min(sal) from emp where job ='MANAGER' group by deptno</p> <p>31、列出所有员工的年工资,按年薪从低到高排序
+思路
+1. 年薪=sal*12  或年薪=(sal+comm)<em>12  ,comm有可能为null因此需要使用ifnull函数 年薪=(sal+ifnull(comm,0))<em>12
+select   ename ,sal</em>12 from emp order by sal</em>12
+select   ename ,(sal+ifnull(comm,0))*12 from emp order by (sal+ifnull(comm,0))*12</p> <p>32、求出员工领导的薪水超过3000的员工名称与领导名称
+思路
+1.使用2个emp进行多表查询，emp1为 员工表 emp2为领导表，使用emp1中的mgr和emp2中的empno消除笛卡尔积
+select e1.ename,e2.ename   from emp e1 inner join emp e2 on e1.mgr=e2.empno where e2.sal&gt;3000</p> <p>33、求出部门名称中,带'S'字符的部门员工的工资合计、部门人数</p> <p>思路
+1.使用emp和dept 进行多表查询，并消除笛卡尔积
+select * from emp e right join dept d on e.deptno=d.deptno<br>
+2.在步骤1的基础上过滤掉部门名中没有s的部门
+select * from emp e right join dept d on e.deptno=d.deptno   where d.dname like '%S%'
+3.在步骤2的基础上根据部门编号和部门名进行分组
+select * from emp e right join dept d on e.deptno=d.deptno   where d.dname like '%S%'  group by d.deptno
+4.在步骤3的基础上添加显示列统计部门的人数，和工资合计
+select d.deptno,max(d.dname),ifnull(sum(sal),0) ,count(empno) from emp e right join dept d on e.deptno=d.deptno   where d.dname like '%S%'  group by d.deptno</p> <p>34、给任职日期超过30年的员工加薪10%
+select empno from emp where (to_days(now())-to_days(hiredate))/365&gt;30
+错误的 ，更新时where 写不了子查询
+update emp set sal=sal*1.1 where empno in( select empno from emp where (to_days(now())-to_days(hiredate))/365&gt;30)</p> <div class="language- extra-class"><pre><code>update emp set sal=sal*1.1 where (to_days(now())-to_days(hiredate))/365&gt;30
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/pages/MySQL/day04.html" class="prev">
+        MySQL进阶
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.b653f105.js" defer></script><script src="/assets/js/2.99d1a617.js" defer></script><script src="/assets/js/33.d052232e.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>子查询 | Hello VuePress</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="Just playing around">
+    <link rel="preload" href="/assets/css/0.styles.80b48331.css" as="style"><link rel="preload" href="/assets/js/app.b653f105.js" as="script"><link rel="preload" href="/assets/js/2.99d1a617.js" as="script"><link rel="preload" href="/assets/js/31.4e91fc6c.js" as="script"><link rel="prefetch" href="/assets/js/10.800b72c9.js"><link rel="prefetch" href="/assets/js/11.57accf41.js"><link rel="prefetch" href="/assets/js/12.13fbcf8c.js"><link rel="prefetch" href="/assets/js/13.4d2d664d.js"><link rel="prefetch" href="/assets/js/14.910991c0.js"><link rel="prefetch" href="/assets/js/15.1313f354.js"><link rel="prefetch" href="/assets/js/16.6db479e6.js"><link rel="prefetch" href="/assets/js/17.2f448bc3.js"><link rel="prefetch" href="/assets/js/18.30dabd53.js"><link rel="prefetch" href="/assets/js/19.d2eaaaad.js"><link rel="prefetch" href="/assets/js/20.89b76482.js"><link rel="prefetch" href="/assets/js/21.c3198162.js"><link rel="prefetch" href="/assets/js/22.f98eeba2.js"><link rel="prefetch" href="/assets/js/23.b9aba8a3.js"><link rel="prefetch" href="/assets/js/24.3e956e2a.js"><link rel="prefetch" href="/assets/js/25.b1b78e1c.js"><link rel="prefetch" href="/assets/js/26.cf1a8b48.js"><link rel="prefetch" href="/assets/js/27.d5bfcc65.js"><link rel="prefetch" href="/assets/js/28.953cb79b.js"><link rel="prefetch" href="/assets/js/29.8a492853.js"><link rel="prefetch" href="/assets/js/3.3388cb9e.js"><link rel="prefetch" href="/assets/js/30.b01648fa.js"><link rel="prefetch" href="/assets/js/32.4bbadcf2.js"><link rel="prefetch" href="/assets/js/33.d052232e.js"><link rel="prefetch" href="/assets/js/34.33e965c9.js"><link rel="prefetch" href="/assets/js/35.0ddaddcd.js"><link rel="prefetch" href="/assets/js/36.edb41847.js"><link rel="prefetch" href="/assets/js/37.8e9c2d1f.js"><link rel="prefetch" href="/assets/js/4.dc746784.js"><link rel="prefetch" href="/assets/js/5.d434ae10.js"><link rel="prefetch" href="/assets/js/6.7eb90bfc.js"><link rel="prefetch" href="/assets/js/7.041e9117.js"><link rel="prefetch" href="/assets/js/8.9ce2df1b.js"><link rel="prefetch" href="/assets/js/9.e3ac39ca.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.80b48331.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Hello VuePress</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/pages/JavaScript/" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue学习" class="dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Vue/入门.html" class="nav-link">
+  Vue入门
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Vue/进阶.html" class="nav-link">
+  Vue进阶
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JAVA学习" class="dropdown-title"><span class="title">JAVA</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Vue/入门.html" class="nav-link">
+  JAVA
+</a></li><li class="dropdown-item"><!----> <a href="/pages/JAVA/JavaWeb/" class="nav-link">
+  JAVAWeb
+</a></li><li class="dropdown-item"><!----> <a href="/pages/JAVA/数据结构与算法/" class="nav-link">
+  数据结构与算法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL学习" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/MySQL/" class="nav-link router-link-active">
+  MySQL
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/pages/JavaScript/" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue学习" class="dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Vue/入门.html" class="nav-link">
+  Vue入门
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Vue/进阶.html" class="nav-link">
+  Vue进阶
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JAVA学习" class="dropdown-title"><span class="title">JAVA</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Vue/入门.html" class="nav-link">
+  JAVA
+</a></li><li class="dropdown-item"><!----> <a href="/pages/JAVA/JavaWeb/" class="nav-link">
+  JAVAWeb
+</a></li><li class="dropdown-item"><!----> <a href="/pages/JAVA/数据结构与算法/" class="nav-link">
+  数据结构与算法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL学习" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/MySQL/" class="nav-link router-link-active">
+  MySQL
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/pages/JavaScript/" class="sidebar-heading clickable"><span>JavaScript</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/JavaScript/day10.html" class="sidebar-link">对象&amp;函数</a></li><li><a href="/pages/JavaScript/day11.html" class="sidebar-link">知道</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/pages/Vue/" class="sidebar-heading clickable"><span>Vue学习</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/Vue/入门.html" class="sidebar-link">Vue入门</a></li><li><a href="/pages/Vue/进阶.html" class="sidebar-link">Vue进阶</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/pages/JAVA/JavaWeb/" class="sidebar-heading clickable"><span>JavaWeb</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/JAVA/JavaWeb/Servlet&amp;Request&amp;案例.html" class="sidebar-link">Servlet&amp;Request</a></li><li><a href="/pages/JAVA/JavaWeb/Response.html" class="sidebar-link">Response</a></li><li><a href="/pages/JAVA/JavaWeb/Cookie&amp;Session笔记.html" class="sidebar-link">Cookie&amp;Session</a></li><li><a href="/pages/JAVA/JavaWeb/EL&amp;JSTL笔记.html" class="sidebar-link">EL&amp;STL</a></li><li><a href="/pages/JAVA/JavaWeb/Filter&amp;Listener笔记.html" class="sidebar-link">Filter&amp;Listener</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/pages/JAVA/数据结构与算法/" class="sidebar-heading clickable"><span>数据结构与算法</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/JAVA/数据结构与算法/第一章.html" class="sidebar-link">一、内容介绍</a></li><li><a href="/pages/JAVA/数据结构与算法/第二章.html" class="sidebar-link">二、数据结构和算法关系</a></li><li><a href="/pages/JAVA/数据结构与算法/第三章.html" class="sidebar-link">三、稀疏数组和队列</a></li><li><a href="/pages/JAVA/数据结构与算法/第四章.html" class="sidebar-link">四、链表</a></li><li><a href="/pages/JAVA/数据结构与算法/第五章.html" class="sidebar-link">五、栈</a></li><li><a href="/pages/JAVA/数据结构与算法/第六章.html" class="sidebar-link">六、递归</a></li><li><a href="/pages/JAVA/数据结构与算法/第七章.html" class="sidebar-link">七、排序</a></li><li><a href="/pages/JAVA/数据结构与算法/第八章.html" class="sidebar-link">八、查找</a></li><li><a href="/pages/JAVA/数据结构与算法/第九章.html" class="sidebar-link">九、哈希表</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/pages/MySQL/" class="sidebar-heading clickable router-link-active open"><span>MySQL</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/MySQL/day01.html" class="sidebar-link">MySQL基本命令</a></li><li><a href="/pages/MySQL/day02.html" class="sidebar-link">MySQL入门</a></li><li><a href="/pages/MySQL/day03.html" class="active sidebar-link">MySQL基础</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/MySQL/day03.html#子查询" class="sidebar-link">子查询</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/day03.html#_1-where中使用子查询" class="sidebar-link">1.where中使用子查询</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/day03.html#_2-from中使用子查询" class="sidebar-link">2.from中使用子查询</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/day03.html#_3-select中使用子查询" class="sidebar-link">3.select中使用子查询</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/day03.html#查询结果合并union" class="sidebar-link">查询结果合并union</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/day03.html#_4-查询job包含manager和包含salesman的员工" class="sidebar-link">4.查询job包含MANAGER和包含SALESMAN的员工</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/day03.html#分页查询limit" class="sidebar-link">分页查询limit</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/day03.html#_5-获取前5条记录" class="sidebar-link">5.获取前5条记录</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/day03.html#创建表" class="sidebar-link">创建表</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/day03.html#修改表结构" class="sidebar-link">修改表结构</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/day03.html#数据插入" class="sidebar-link">数据插入</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/day03.html#_6-向t-stu表中插入数据" class="sidebar-link">6.向t_stu表中插入数据</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/day03.html#_7-修改t-stu表中stu-no为123456的学生年龄和地址为25-和上海" class="sidebar-link">7.修改tstu表中stuno为123456的学生年龄和地址为25 和上海</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/day03.html#删除数据" class="sidebar-link">删除数据</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/day03.html#_8-删除t-stu表中stu-no为123456-的数据" class="sidebar-link">8.删除tstu表中stuno为123456 的数据</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/day03.html#数据的常用设计模式" class="sidebar-link">数据的常用设计模式</a></li></ul></li><li><a href="/pages/MySQL/day04.html" class="sidebar-link">MySQL进阶</a></li><li><a href="/pages/MySQL/lesson.html" class="sidebar-link">练习题34道</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="子查询"><a href="#子查询" class="header-anchor">#</a> 子查询</h2> <div class="language- extra-class"><pre><code>子查询其实就是要在一条查询语句中再嵌套1条或多条查询语句
+子查询可以出现的3个位置
+	1、出现在where的后面作为一个或多个数据，
+注意：这个子查询只能返回1列n行的数据，如果返回的是1列1行数据那么可以使用简单条件例如 = &lt;  &lt;= &gt; &gt;= !=
+如果返回的是1列多行数据那么只能使用in 或not in
+	2、出现在from后面作为一个临时表
+注意：
+	1、这个子查询可以返回n行n列的数据，
+	2、这个子查询的显示列名作为临时表的字段名使用，
+	3、如果子查询中使用了函数 那么必须要为这个显示列起别名
+	4、出现在select后面作为显示列的一部分
+注意：
+	1、这个子查询需要返回1行1列的数据
+	2、每一条记录都会执行一次这个子查询因此效率非常的低不推荐使用
+注意：
+	1、无论子查询出现在什么位置上，子查询必须要放到()里面
+</code></pre></div><h2 id="_1-where中使用子查询"><a href="#_1-where中使用子查询" class="header-anchor">#</a> 1.where中使用子查询</h2> <div class="language- extra-class"><pre><code>获取工资高于公司平均工资的所有员工
+思路
+	1、获取公司的平均工资
+	select avg(sal) from emp
+	2、使用步骤1的语句作为查询条件，获取工资高于步骤1查询结果的所有记录
+	select * from emp where sal&gt;(select avg(sal) from emp)
+</code></pre></div><h2 id="_2-from中使用子查询"><a href="#_2-from中使用子查询" class="header-anchor">#</a> 2.from中使用子查询</h2> <div class="language- extra-class"><pre><code>查询员工信息，查询哪些人是管理者，要求显示出其员工编号和员工姓名
+思路
+	1、获取所有的管理者的编号
+	select mgr from emp where mgr is not null group by mgr
+	2、使用步骤1的查询语句作为临时表temptable 然后使用emp与temptable进行多表查询
+	使用emp中的empno与temptable表中的mgr消除笛卡尔积
+	select * from emp e inner join temptable tt on e.empno=tt.mgr 
+	3、使用步骤1的查询语句替换步骤2中的temptable
+	select * from emp e inner join (select mgr from emp where mgr is not null group by mgr) tt on e.empno=tt.mgr 
+</code></pre></div><h2 id="_3-select中使用子查询"><a href="#_3-select中使用子查询" class="header-anchor">#</a> 3.select中使用子查询</h2> <div class="language- extra-class"><pre><code>获取员工的信息以及部门的名称
+思路
+	1.获取所有的员工信息
+	select * from emp e
+	2.在步骤1的显示列中添加一个子查询，要根据当前记录行中的员工的部门编号作为条件查询dept表中的对应的部门名称
+	select *,(select dname from dept where deptno=e.deptno) from emp e
+</code></pre></div><h2 id="查询结果合并union"><a href="#查询结果合并union" class="header-anchor">#</a> 查询结果合并union</h2> <div class="language- extra-class"><pre><code>将多条SQL语句的查询结果合并成1个结果
+语法格式
+	select语句1
+	union [all]
+	select语句2
+	...
+	union [all]
+	select 语句n
+
+注意：
+	1、union 的 all是可选的表示获取多条语句中所有的数据内容包括重复的 默认表示消除重复 all的效率较高
+	如果可以确定这些语句中没有重复的数据可以使用 union all
+	2、这些语句中返回的列的数量必须要完全相等
+	3、所有的语句中每个列的数据类型必须完全对相应相同
+	4、所有的语句中每个列的含义也必须相同
+	5、这个合并效率不高因此不推荐使用
+</code></pre></div><h2 id="_4-查询job包含manager和包含salesman的员工"><a href="#_4-查询job包含manager和包含salesman的员工" class="header-anchor">#</a> 4.查询job包含MANAGER和包含SALESMAN的员工</h2> <div class="language- extra-class"><pre><code>select * from emp where job in('MANAGER','SALESMAN')
+</code></pre></div><h3 id="使用union实现"><a href="#使用union实现" class="header-anchor">#</a> 使用union实现</h3> <div class="language- extra-class"><pre><code>select * from emp where job ='MANAGER'
+union
+select * from emp where job ='SALESMAN'
+
+select * from emp 
+union all
+select * from emp 
+</code></pre></div><h2 id="分页查询limit"><a href="#分页查询limit" class="header-anchor">#</a> 分页查询limit</h2> <div class="language- extra-class"><pre><code>获取数据库表中的一部分的数据内容，用来提高数据库的响应速度，比较适合数据量大的时候使用
+分页也可以提高用户的体验
+
+语法格式
+	select 显示列 from 表名 [where] [group by[having]][order by] limit 跳过的记录数量,获取多少条记录
+
+跳过的记录数量 ：取值为正整数 ，大于等于0
+获取多少条记录： 取值为正整数 ，大于0
+</code></pre></div><h2 id="_5-获取前5条记录"><a href="#_5-获取前5条记录" class="header-anchor">#</a> 5.获取前5条记录</h2> <div class="language- extra-class"><pre><code>select  * from emp limit 0,5
+获取6到10的记录
+select  * from emp limit 5,5
+获取薪水最高的前5条记录
+select  * from emp order by sal desc limit 0,5
+</code></pre></div><h2 id="创建表"><a href="#创建表" class="header-anchor">#</a> 创建表</h2> <div class="language- extra-class"><pre><code>语法格式
+	create table 表名(  
+	字段名1 数据类型[(长度)]  约束条件,
+	字段名2 数据类型[(长度)]  约束条件,
+	...
+	字段名n 数据类型[(长度)]  约束条件
+	)
+
+常用的数据类型
+	varchar(长度)	                变长字符串，存储空间等于实际数据空间
+	double (有效数字位数，小数位)	数值型
+	float(有效数字位数，小数位)	数值型
+	Int( 长度)	                整型
+	bigint(长度)	               长整型
+	date	                       日期型 年月日
+	datetime	               日期型 年月日 时分秒 毫秒
+
+创建表t_student 拥有字段
+	stu_no  字符串类型   长度64
+	stu_name 字符串类型  长度64
+	stu_age  数字       
+
+	create table t_student(  
+	stu_no varchar(64),
+	stu_name varchar(64) ,
+	stu_age int  
+	);
+注意：
+	1.创建表示数字和日期类型不需要指定长度，字符串必须指定长度 ，浮点型必须指定长度
+	2.字段名在当前表中不能重复
+	3.表名在当前库中不能重复
+</code></pre></div><h2 id="修改表结构"><a href="#修改表结构" class="header-anchor">#</a> 修改表结构</h2> <div class="language- extra-class"><pre><code>语法格式  
+	alter table 表名 add    字段名  数据类型[(长度)] 约束条件    向表中添加一个字段
+	alter table 表名 modify 字段名 数据类型[(长度)] 约束条件   修改表中字段的类型 长度 以及约束
+	alter table 表名 change 旧字段名 新字段名[(长度)] 约束条件  修改字段的名字 类型 长度 以及约束
+	alter table 表名 drop   字段名  删除表中的字段同时删除数据
+</code></pre></div><h2 id="数据插入"><a href="#数据插入" class="header-anchor">#</a> 数据插入</h2> <div class="language- extra-class"><pre><code>语法格式
+	全列数据插入，数据的类型以及含义必需与表中字段的默认顺序一一对应 不推荐
+	insert into 表名 values(数据1,数据2...,数据n) 
+	指定列插入 数据的类型以及含义必须与字段名的含义和类型一一对应 推荐
+	insert into 表名(字段名1,字段名2...,字段名n)values(数据1,数据2...,数据n) 
+注意
+	1.插入数据时非数字型的字段数据必须使用'' 包括字符串和日期，而且日期必须要符合数据库的默认日期格式
+	MySQL默认的日期格式为 yyyy-MM-dd 或 yyyy-MM-dd hh:mm:ss例如 '2019-03-26 15:21:20'
+</code></pre></div><h2 id="_6-向t-stu表中插入数据"><a href="#_6-向t-stu表中插入数据" class="header-anchor">#</a> 6.向t_stu表中插入数据</h2> <div class="language- extra-class"><pre><code>insert into t_stu(stu_no,stu_name,stu_age,stu_address)values('123456','张三',23,'北京'); 
+insert into t_stu values('张三','123456',23,'北京'); 
+</code></pre></div><h1 id="修改数据"><a href="#修改数据" class="header-anchor">#</a> 修改数据</h1> <div class="language- extra-class"><pre><code>语法格式
+	update 表名 set 字段名1=数据,字段名2=数据...,字段名n=数据 [where 条件]
+注意：
+	1.where 条件是可选的但是却必须要添加否则会修改表中所有的数据
+</code></pre></div><h2 id="_7-修改t-stu表中stu-no为123456的学生年龄和地址为25-和上海"><a href="#_7-修改t-stu表中stu-no为123456的学生年龄和地址为25-和上海" class="header-anchor">#</a> 7.修改t_stu表中stu_no为123456的学生年龄和地址为25 和上海</h2> <div class="language- extra-class"><pre><code>update t_stu set stu_age=25,stu_address='上海' where stu_no='123456'
+</code></pre></div><h2 id="删除数据"><a href="#删除数据" class="header-anchor">#</a> 删除数据</h2> <div class="language- extra-class"><pre><code>语法格式
+	delete from 表名 [where 条件]
+注意：
+	1.where 条件是可选的但是却必须要添加否则会删除表中所有的数据
+</code></pre></div><h2 id="_8-删除t-stu表中stu-no为123456-的数据"><a href="#_8-删除t-stu表中stu-no为123456-的数据" class="header-anchor">#</a> 8.删除t_stu表中stu_no为123456 的数据</h2> <div class="language- extra-class"><pre><code>delete from t_stu  where stu_no='123456'
+</code></pre></div><h1 id="约束条件"><a href="#约束条件" class="header-anchor">#</a> 约束条件</h1> <div class="language- extra-class"><pre><code>常用的约束
+	1、非空约束，not null  如果某个列添加非空约束那么在插入数据就必须要插入这个字段否则直接报错
+	2、唯一约束，unique    如果某个列添加唯一约束那么这个列中的数据是不能重复的
+	3、主键约束，primary key 如果某个列添加主键约束那么这个列不能为空也不能重复，主键通常不需要有任何的业务逻辑
+	含义，作用是标记这条记录在表中的唯一性，通常我们会命名为 id bigint类型  自动递增
+	4、外键约束，foreign key 如果某个列添加了外键约束那么这个列的值可以为空但是不能填写一个不存在的值，作用是
+	   完成2个表之间的关联关系，例如学生中应该存放一个班级表中的主键作为外键，用于约束这个学生
+	   是哪个班级下的
+
+约束条件的使用语法有2中
+	1.在创建表示添加
+	2.在修改表结构时添加或修改或删除
+</code></pre></div><h2 id="数据的常用设计模式"><a href="#数据的常用设计模式" class="header-anchor">#</a> 数据的常用设计模式</h2> <div class="language- extra-class"><pre><code>	1.一对多 ：一个表中的一条记录要对应另外一个表的多条记录，例如一个班级下可以拥有多个学生
+	实现方式： 在多的一方中定义个字段用于存放一的一方中的主键作为外键
+
+	2.一对一：一表中的一条记录只能对应另外一张表中的一条记录，例如学生和学生的详细信息
+	实现方式：在2个表任意的一个表中添加一个列用于存放另外一张表中的主键作为外键，并设置这个外键列为唯一约束
+	推荐在详情表中添加外键
+	3.多对多：2张表中的每条记录都会对应另外一张表中的多条记录，例如学生和课程
+	实现方式：需要定义第三张表，这个表中只需要拥有2个列分别存放2个表中的id作为外键
+
+	4.自关联一对多：当前表中的一条记录要对应当前表中的多条记录，例如商品的类型
+	实现方式：在当前表中定义一个列用于存放当前表中某一条记录的主键值
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/pages/MySQL/day02.html" class="prev">
+        MySQL入门
+      </a></span> <span class="next"><a href="/pages/MySQL/day04.html">
+        MySQL进阶
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.b653f105.js" defer></script><script src="/assets/js/2.99d1a617.js" defer></script><script src="/assets/js/31.4e91fc6c.js" defer></script>
+  </body>
+</html>

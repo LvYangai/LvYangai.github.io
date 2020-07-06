@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>第 9 章 哈希表 | Hello VuePress</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="Just playing around">
+    <link rel="preload" href="/assets/css/0.styles.80b48331.css" as="style"><link rel="preload" href="/assets/js/app.b653f105.js" as="script"><link rel="preload" href="/assets/js/2.99d1a617.js" as="script"><link rel="preload" href="/assets/js/17.2f448bc3.js" as="script"><link rel="prefetch" href="/assets/js/10.800b72c9.js"><link rel="prefetch" href="/assets/js/11.57accf41.js"><link rel="prefetch" href="/assets/js/12.13fbcf8c.js"><link rel="prefetch" href="/assets/js/13.4d2d664d.js"><link rel="prefetch" href="/assets/js/14.910991c0.js"><link rel="prefetch" href="/assets/js/15.1313f354.js"><link rel="prefetch" href="/assets/js/16.6db479e6.js"><link rel="prefetch" href="/assets/js/18.30dabd53.js"><link rel="prefetch" href="/assets/js/19.d2eaaaad.js"><link rel="prefetch" href="/assets/js/20.89b76482.js"><link rel="prefetch" href="/assets/js/21.c3198162.js"><link rel="prefetch" href="/assets/js/22.f98eeba2.js"><link rel="prefetch" href="/assets/js/23.b9aba8a3.js"><link rel="prefetch" href="/assets/js/24.3e956e2a.js"><link rel="prefetch" href="/assets/js/25.b1b78e1c.js"><link rel="prefetch" href="/assets/js/26.cf1a8b48.js"><link rel="prefetch" href="/assets/js/27.d5bfcc65.js"><link rel="prefetch" href="/assets/js/28.953cb79b.js"><link rel="prefetch" href="/assets/js/29.8a492853.js"><link rel="prefetch" href="/assets/js/3.3388cb9e.js"><link rel="prefetch" href="/assets/js/30.b01648fa.js"><link rel="prefetch" href="/assets/js/31.4e91fc6c.js"><link rel="prefetch" href="/assets/js/32.4bbadcf2.js"><link rel="prefetch" href="/assets/js/33.d052232e.js"><link rel="prefetch" href="/assets/js/34.33e965c9.js"><link rel="prefetch" href="/assets/js/35.0ddaddcd.js"><link rel="prefetch" href="/assets/js/36.edb41847.js"><link rel="prefetch" href="/assets/js/37.8e9c2d1f.js"><link rel="prefetch" href="/assets/js/4.dc746784.js"><link rel="prefetch" href="/assets/js/5.d434ae10.js"><link rel="prefetch" href="/assets/js/6.7eb90bfc.js"><link rel="prefetch" href="/assets/js/7.041e9117.js"><link rel="prefetch" href="/assets/js/8.9ce2df1b.js"><link rel="prefetch" href="/assets/js/9.e3ac39ca.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.80b48331.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Hello VuePress</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/pages/JavaScript/" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue学习" class="dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Vue/入门.html" class="nav-link">
+  Vue入门
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Vue/进阶.html" class="nav-link">
+  Vue进阶
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JAVA学习" class="dropdown-title"><span class="title">JAVA</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Vue/入门.html" class="nav-link">
+  JAVA
+</a></li><li class="dropdown-item"><!----> <a href="/pages/JAVA/JavaWeb/" class="nav-link">
+  JAVAWeb
+</a></li><li class="dropdown-item"><!----> <a href="/pages/JAVA/数据结构与算法/" class="nav-link">
+  数据结构与算法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL学习" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/MySQL/" class="nav-link">
+  MySQL
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/pages/JavaScript/" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue学习" class="dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Vue/入门.html" class="nav-link">
+  Vue入门
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Vue/进阶.html" class="nav-link">
+  Vue进阶
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JAVA学习" class="dropdown-title"><span class="title">JAVA</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Vue/入门.html" class="nav-link">
+  JAVA
+</a></li><li class="dropdown-item"><!----> <a href="/pages/JAVA/JavaWeb/" class="nav-link">
+  JAVAWeb
+</a></li><li class="dropdown-item"><!----> <a href="/pages/JAVA/数据结构与算法/" class="nav-link">
+  数据结构与算法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL学习" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/MySQL/" class="nav-link">
+  MySQL
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/pages/JavaScript/" class="sidebar-heading clickable"><span>JavaScript</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/JavaScript/day10.html" class="sidebar-link">对象&amp;函数</a></li><li><a href="/pages/JavaScript/day11.html" class="sidebar-link">知道</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/pages/Vue/" class="sidebar-heading clickable"><span>Vue学习</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/Vue/入门.html" class="sidebar-link">Vue入门</a></li><li><a href="/pages/Vue/进阶.html" class="sidebar-link">Vue进阶</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/pages/JAVA/JavaWeb/" class="sidebar-heading clickable"><span>JavaWeb</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/JAVA/JavaWeb/Servlet&amp;Request&amp;案例.html" class="sidebar-link">Servlet&amp;Request</a></li><li><a href="/pages/JAVA/JavaWeb/Response.html" class="sidebar-link">Response</a></li><li><a href="/pages/JAVA/JavaWeb/Cookie&amp;Session笔记.html" class="sidebar-link">Cookie&amp;Session</a></li><li><a href="/pages/JAVA/JavaWeb/EL&amp;JSTL笔记.html" class="sidebar-link">EL&amp;STL</a></li><li><a href="/pages/JAVA/JavaWeb/Filter&amp;Listener笔记.html" class="sidebar-link">Filter&amp;Listener</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/pages/JAVA/数据结构与算法/" class="sidebar-heading clickable open"><span>数据结构与算法</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/JAVA/数据结构与算法/第一章.html" class="sidebar-link">一、内容介绍</a></li><li><a href="/pages/JAVA/数据结构与算法/第二章.html" class="sidebar-link">二、数据结构和算法关系</a></li><li><a href="/pages/JAVA/数据结构与算法/第三章.html" class="sidebar-link">三、稀疏数组和队列</a></li><li><a href="/pages/JAVA/数据结构与算法/第四章.html" class="sidebar-link">四、链表</a></li><li><a href="/pages/JAVA/数据结构与算法/第五章.html" class="sidebar-link">五、栈</a></li><li><a href="/pages/JAVA/数据结构与算法/第六章.html" class="sidebar-link">六、递归</a></li><li><a href="/pages/JAVA/数据结构与算法/第七章.html" class="sidebar-link">七、排序</a></li><li><a href="/pages/JAVA/数据结构与算法/第八章.html" class="sidebar-link">八、查找</a></li><li><a href="/pages/JAVA/数据结构与算法/第九章.html" class="active sidebar-link">九、哈希表</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/JAVA/数据结构与算法/第九章.html#_9-1-哈希表-散列-gogle-上机题" class="sidebar-link">9.1 哈希表(散列)-Gogle 上机题</a></li><li class="sidebar-sub-header"><a href="/pages/JAVA/数据结构与算法/第九章.html#_9-2-哈希表的基本介绍" class="sidebar-link">9.2 哈希表的基本介绍</a></li><li class="sidebar-sub-header"><a href="/pages/JAVA/数据结构与算法/第九章.html#_9-3-gogle-公司的一个上机题" class="sidebar-link">9.3 gogle 公司的一个上机题:</a></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/pages/MySQL/" class="sidebar-heading clickable"><span>MySQL</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/MySQL/day01.html" class="sidebar-link">MySQL基本命令</a></li><li><a href="/pages/MySQL/day02.html" class="sidebar-link">MySQL入门</a></li><li><a href="/pages/MySQL/day03.html" class="sidebar-link">MySQL基础</a></li><li><a href="/pages/MySQL/day04.html" class="sidebar-link">MySQL进阶</a></li><li><a href="/pages/MySQL/lesson.html" class="sidebar-link">练习题34道</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="第-9-章-哈希表"><a href="#第-9-章-哈希表" class="header-anchor">#</a> 第 9 章 哈希表</h1> <h2 id="_9-1-哈希表-散列-gogle-上机题"><a href="#_9-1-哈希表-散列-gogle-上机题" class="header-anchor">#</a> 9.1 哈希表(散列)-Gogle 上机题</h2> <div class="language- extra-class"><pre><code> 1) 看一个实际需求，gogle 公司的一个上机题:
+ 2) 有一个公司,当有新的员工来报道时,要求将该员工的信息加入(id,性别,年龄,住址.),当输入该员工的 id 时,要求查
+找到该员工的 所有信息. 
+找到该员工的 所有信息. 3) 要求: 不使用数据库,尽量节省内存,速度越快越好=&gt;哈希表(散列)
+</code></pre></div><h2 id="_9-2-哈希表的基本介绍"><a href="#_9-2-哈希表的基本介绍" class="header-anchor">#</a> 9.2 哈希表的基本介绍</h2> <div class="language- extra-class"><pre><code>   散列表（Hash table，也叫哈希表），是根据关键码值(Key value)而直接进行访问的数据结构。也就是说，
+它通过把关键码值映射到表中一个位置来访问记录，以加快查找的速度。这个映射函数叫做散列函数，存放记录的
+数组叫做散列表。
+</code></pre></div><p><img src="/java/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AC%AC%E4%B9%9D%E7%AB%A0_files/1.jpg" alt="散列表"> <img src="/java/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AC%AC%E4%B9%9D%E7%AB%A0_files/2.jpg" alt="链表"></p> <h2 id="_9-3-gogle-公司的一个上机题"><a href="#_9-3-gogle-公司的一个上机题" class="header-anchor">#</a> 9.3 gogle 公司的一个上机题:</h2> <div class="language- extra-class"><pre><code>   有一个公司,当有新的员工来报道时,要求将该员工的信息加入(id,性别,年龄,名字,住址.),当输入该员工的 id 时,
+要求查找到该员工的所有信息
+要求:
+ 1) 不使用数据库,速度越快越好=&gt;哈希表(散列)
+ 2) 添加时，保证按照 id 从低到高插入 [课后思考：如果 id 不是从低到高插入，但要求各条链表仍是从低到
+	高，怎么解决?]
+ 3) 使用链表来实现哈希表, 该链表不带表头[即: 链表的第一个结点就存放雇员信息]
+ 4) 思路分析并画出示意图
+</code></pre></div><p><img src="/java/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E7%AC%AC%E4%B9%9D%E7%AB%A0_files/3.jpg" alt="哈希表雇员信息">
+代码：
+public class HashTabDemo {</p> <div class="language- extra-class"><pre><code>	public static void main(String[] args) {
+		
+		//创建哈希表
+		HashTab hashTab = new HashTab(7);
+		
+		//写一个简单的菜单
+		String key = &quot;&quot;;
+		Scanner scanner = new Scanner(System.in);
+		while(true) {
+			System.out.println(&quot;add:  添加雇员&quot;);
+			System.out.println(&quot;list: 显示雇员&quot;);
+			System.out.println(&quot;find: 查找雇员&quot;);
+			System.out.println(&quot;exit: 退出系统&quot;);
+			
+			key = scanner.next();
+			switch (key) {
+			case &quot;add&quot;:
+				System.out.println(&quot;输入id&quot;);
+				int id = scanner.nextInt();
+				System.out.println(&quot;输入名字&quot;);
+				String name = scanner.next();
+				//创建 雇员
+				Emp emp = new Emp(id, name);
+				hashTab.add(emp);
+				break;
+			case &quot;list&quot;:
+				hashTab.list();
+				break;
+			case &quot;find&quot;:
+				System.out.println(&quot;请输入要查找的id&quot;);
+				id = scanner.nextInt();
+				hashTab.findEmpById(id);
+				break;
+			case &quot;exit&quot;:
+				scanner.close();
+				System.exit(0);
+			default:
+				break;
+			}
+		}
+		
+	}
+
+}
+
+//创建HashTab 管理多条链表
+class HashTab {
+	private EmpLinkedList[] empLinkedListArray;
+	private int size; //表示有多少条链表
+	
+	//构造器
+	public HashTab(int size) {
+		this.size = size;
+		//初始化empLinkedListArray
+		empLinkedListArray = new EmpLinkedList[size];
+		//？留一个坑, 这时不要分别初始化每个链表
+		for(int i = 0; i &lt; size; i++) {
+			empLinkedListArray[i] = new EmpLinkedList();
+		}
+	}
+	
+	//添加雇员
+	public void add(Emp emp) {
+		//根据员工的id ,得到该员工应当添加到哪条链表
+		int empLinkedListNO = hashFun(emp.id);
+		//将emp 添加到对应的链表中
+		empLinkedListArray[empLinkedListNO].add(emp);
+		
+	}
+	//遍历所有的链表,遍历hashtab
+	public void list() {
+		for(int i = 0; i &lt; size; i++) {
+			empLinkedListArray[i].list(i);
+		}
+	}
+	
+	//根据输入的id,查找雇员
+	public void findEmpById(int id) {
+		//使用散列函数确定到哪条链表查找
+		int empLinkedListNO = hashFun(id);
+		Emp emp = empLinkedListArray[empLinkedListNO].findEmpById(id);
+		if(emp != null) {//找到
+			System.out.printf(&quot;在第%d条链表中找到 雇员 id = %d\n&quot;, (empLinkedListNO + 1), id);
+		}else{
+			System.out.println(&quot;在哈希表中，没有找到该雇员~&quot;);
+		}
+	}
+	
+	//编写散列函数, 使用一个简单取模法
+	public int hashFun(int id) {
+		return id % size;
+	}
+	
+	
+}
+
+//表示一个雇员
+class Emp {
+	public int id;
+	public String name;
+	public Emp next; //next 默认为 null
+	public Emp(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+}
+
+//创建EmpLinkedList ,表示链表
+class EmpLinkedList {
+	//头指针，执行第一个Emp,因此我们这个链表的head 是直接指向第一个Emp
+	private Emp head; //默认null
+	
+	//添加雇员到链表
+	//说明
+	//1. 假定，当添加雇员时，id 是自增长，即id的分配总是从小到大
+	//   因此我们将该雇员直接加入到本链表的最后即可
+	public void add(Emp emp) {
+		//如果是添加第一个雇员
+		if(head == null) {
+			head = emp;
+			return;
+		}
+		//如果不是第一个雇员，则使用一个辅助的指针，帮助定位到最后
+		Emp curEmp = head;
+		while(true) {
+			if(curEmp.next == null) {//说明到链表最后
+				break;
+			}
+			curEmp = curEmp.next; //后移
+		}
+		//退出时直接将emp 加入链表
+		curEmp.next = emp;
+	}
+	
+	//遍历链表的雇员信息
+	public void list(int no) {
+		if(head == null) { //说明链表为空
+			System.out.println(&quot;第 &quot;+(no+1)+&quot; 链表为空&quot;);
+			return;
+		}
+		System.out.print(&quot;第 &quot;+(no+1)+&quot; 链表的信息为&quot;);
+		Emp curEmp = head; //辅助指针
+		while(true) {
+			System.out.printf(&quot; =&gt; id=%d name=%s\t&quot;, curEmp.id, curEmp.name);
+			if(curEmp.next == null) {//说明curEmp已经是最后结点
+				break;
+			}
+			curEmp = curEmp.next; //后移，遍历
+		}
+		System.out.println();
+	}
+	
+	//根据id查找雇员
+	//如果查找到，就返回Emp, 如果没有找到，就返回null
+	public Emp findEmpById(int id) {
+		//判断链表是否为空
+		if(head == null) {
+			System.out.println(&quot;链表为空&quot;);
+			return null;
+		}
+		//辅助指针
+		Emp curEmp = head;
+		while(true) {
+			if(curEmp.id == id) {//找到
+				break;//这时curEmp就指向要查找的雇员
+			}
+			//退出
+			if(curEmp.next == null) {//说明遍历当前链表没有找到该雇员
+				curEmp = null;
+				break;
+			}
+			curEmp = curEmp.next;//以后
+		}
+		
+		return curEmp;
+	}
+	
+}
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/pages/JAVA/数据结构与算法/第八章.html" class="prev">
+        八、查找
+      </a></span> <span class="next"><a href="/pages/MySQL/day01.html">
+        MySQL基本命令
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.b653f105.js" defer></script><script src="/assets/js/2.99d1a617.js" defer></script><script src="/assets/js/17.2f448bc3.js" defer></script>
+  </body>
+</html>

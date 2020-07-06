@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Mysql days04 | Hello VuePress</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="Just playing around">
+    <link rel="preload" href="/assets/css/0.styles.80b48331.css" as="style"><link rel="preload" href="/assets/js/app.b653f105.js" as="script"><link rel="preload" href="/assets/js/2.99d1a617.js" as="script"><link rel="preload" href="/assets/js/32.4bbadcf2.js" as="script"><link rel="prefetch" href="/assets/js/10.800b72c9.js"><link rel="prefetch" href="/assets/js/11.57accf41.js"><link rel="prefetch" href="/assets/js/12.13fbcf8c.js"><link rel="prefetch" href="/assets/js/13.4d2d664d.js"><link rel="prefetch" href="/assets/js/14.910991c0.js"><link rel="prefetch" href="/assets/js/15.1313f354.js"><link rel="prefetch" href="/assets/js/16.6db479e6.js"><link rel="prefetch" href="/assets/js/17.2f448bc3.js"><link rel="prefetch" href="/assets/js/18.30dabd53.js"><link rel="prefetch" href="/assets/js/19.d2eaaaad.js"><link rel="prefetch" href="/assets/js/20.89b76482.js"><link rel="prefetch" href="/assets/js/21.c3198162.js"><link rel="prefetch" href="/assets/js/22.f98eeba2.js"><link rel="prefetch" href="/assets/js/23.b9aba8a3.js"><link rel="prefetch" href="/assets/js/24.3e956e2a.js"><link rel="prefetch" href="/assets/js/25.b1b78e1c.js"><link rel="prefetch" href="/assets/js/26.cf1a8b48.js"><link rel="prefetch" href="/assets/js/27.d5bfcc65.js"><link rel="prefetch" href="/assets/js/28.953cb79b.js"><link rel="prefetch" href="/assets/js/29.8a492853.js"><link rel="prefetch" href="/assets/js/3.3388cb9e.js"><link rel="prefetch" href="/assets/js/30.b01648fa.js"><link rel="prefetch" href="/assets/js/31.4e91fc6c.js"><link rel="prefetch" href="/assets/js/33.d052232e.js"><link rel="prefetch" href="/assets/js/34.33e965c9.js"><link rel="prefetch" href="/assets/js/35.0ddaddcd.js"><link rel="prefetch" href="/assets/js/36.edb41847.js"><link rel="prefetch" href="/assets/js/37.8e9c2d1f.js"><link rel="prefetch" href="/assets/js/4.dc746784.js"><link rel="prefetch" href="/assets/js/5.d434ae10.js"><link rel="prefetch" href="/assets/js/6.7eb90bfc.js"><link rel="prefetch" href="/assets/js/7.041e9117.js"><link rel="prefetch" href="/assets/js/8.9ce2df1b.js"><link rel="prefetch" href="/assets/js/9.e3ac39ca.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.80b48331.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Hello VuePress</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/pages/JavaScript/" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue学习" class="dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Vue/入门.html" class="nav-link">
+  Vue入门
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Vue/进阶.html" class="nav-link">
+  Vue进阶
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JAVA学习" class="dropdown-title"><span class="title">JAVA</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Vue/入门.html" class="nav-link">
+  JAVA
+</a></li><li class="dropdown-item"><!----> <a href="/pages/JAVA/JavaWeb/" class="nav-link">
+  JAVAWeb
+</a></li><li class="dropdown-item"><!----> <a href="/pages/JAVA/数据结构与算法/" class="nav-link">
+  数据结构与算法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL学习" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/MySQL/" class="nav-link router-link-active">
+  MySQL
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/pages/JavaScript/" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue学习" class="dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Vue/入门.html" class="nav-link">
+  Vue入门
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Vue/进阶.html" class="nav-link">
+  Vue进阶
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JAVA学习" class="dropdown-title"><span class="title">JAVA</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Vue/入门.html" class="nav-link">
+  JAVA
+</a></li><li class="dropdown-item"><!----> <a href="/pages/JAVA/JavaWeb/" class="nav-link">
+  JAVAWeb
+</a></li><li class="dropdown-item"><!----> <a href="/pages/JAVA/数据结构与算法/" class="nav-link">
+  数据结构与算法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL学习" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/MySQL/" class="nav-link router-link-active">
+  MySQL
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/pages/JavaScript/" class="sidebar-heading clickable"><span>JavaScript</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/JavaScript/day10.html" class="sidebar-link">对象&amp;函数</a></li><li><a href="/pages/JavaScript/day11.html" class="sidebar-link">知道</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/pages/Vue/" class="sidebar-heading clickable"><span>Vue学习</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/Vue/入门.html" class="sidebar-link">Vue入门</a></li><li><a href="/pages/Vue/进阶.html" class="sidebar-link">Vue进阶</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/pages/JAVA/JavaWeb/" class="sidebar-heading clickable"><span>JavaWeb</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/JAVA/JavaWeb/Servlet&amp;Request&amp;案例.html" class="sidebar-link">Servlet&amp;Request</a></li><li><a href="/pages/JAVA/JavaWeb/Response.html" class="sidebar-link">Response</a></li><li><a href="/pages/JAVA/JavaWeb/Cookie&amp;Session笔记.html" class="sidebar-link">Cookie&amp;Session</a></li><li><a href="/pages/JAVA/JavaWeb/EL&amp;JSTL笔记.html" class="sidebar-link">EL&amp;STL</a></li><li><a href="/pages/JAVA/JavaWeb/Filter&amp;Listener笔记.html" class="sidebar-link">Filter&amp;Listener</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/pages/JAVA/数据结构与算法/" class="sidebar-heading clickable"><span>数据结构与算法</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/JAVA/数据结构与算法/第一章.html" class="sidebar-link">一、内容介绍</a></li><li><a href="/pages/JAVA/数据结构与算法/第二章.html" class="sidebar-link">二、数据结构和算法关系</a></li><li><a href="/pages/JAVA/数据结构与算法/第三章.html" class="sidebar-link">三、稀疏数组和队列</a></li><li><a href="/pages/JAVA/数据结构与算法/第四章.html" class="sidebar-link">四、链表</a></li><li><a href="/pages/JAVA/数据结构与算法/第五章.html" class="sidebar-link">五、栈</a></li><li><a href="/pages/JAVA/数据结构与算法/第六章.html" class="sidebar-link">六、递归</a></li><li><a href="/pages/JAVA/数据结构与算法/第七章.html" class="sidebar-link">七、排序</a></li><li><a href="/pages/JAVA/数据结构与算法/第八章.html" class="sidebar-link">八、查找</a></li><li><a href="/pages/JAVA/数据结构与算法/第九章.html" class="sidebar-link">九、哈希表</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/pages/MySQL/" class="sidebar-heading clickable router-link-active open"><span>MySQL</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/MySQL/day01.html" class="sidebar-link">MySQL基本命令</a></li><li><a href="/pages/MySQL/day02.html" class="sidebar-link">MySQL入门</a></li><li><a href="/pages/MySQL/day03.html" class="sidebar-link">MySQL基础</a></li><li><a href="/pages/MySQL/day04.html" class="active sidebar-link">MySQL进阶</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/MySQL/day04.html#_1、约束" class="sidebar-link">1、约束</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/day04.html#_2、存储引擎？" class="sidebar-link">2、存储引擎？</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/day04.html#_3、事务-transaction" class="sidebar-link">3、事务(Transaction)</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/day04.html#_4、索引" class="sidebar-link">4、索引</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/day04.html#_5、视图-view" class="sidebar-link">5、视图(view)</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/day04.html#_6、dba命令" class="sidebar-link">6、DBA命令</a></li><li class="sidebar-sub-header"><a href="/pages/MySQL/day04.html#_7、数据库设计三范式-重点内容，面试经常会问" class="sidebar-link">7、数据库设计三范式(重点内容，面试经常会问)</a></li></ul></li><li><a href="/pages/MySQL/lesson.html" class="sidebar-link">练习题34道</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="mysql-days04"><a href="#mysql-days04" class="header-anchor">#</a> Mysql days04</h1> <h2 id="_1、约束"><a href="#_1、约束" class="header-anchor">#</a> 1、约束</h2> <h3 id="_1-1、唯一性约束-unique"><a href="#_1-1、唯一性约束-unique" class="header-anchor">#</a> 1.1、唯一性约束(unique)</h3> <div class="language- extra-class"><pre><code>* 唯一性约束修饰的字段具有唯一性，不能重复。但可以为null。
+* 案例：给某一列添加unique
+
+drop table if exists t_user;
+create table t_user(
+	id int,
+username varchar(255) unique  //列级约束
+);
+insert into t_user values(1,'zhangsan');		
+insert into t_user values(2,'zhangsan');  //出现编译错误，唯一性约束，该字段与上一行字段重复，但可以为null！
+ERROR 1062 (23000) : Duplicate entry 'zhangsan' for key 'username'
+
+insert into t_user(id) values(2);
+	insert into t_user(id) values(3);
+insert into t_user(id) values(4);
+*案例：给两个列或者多个列添加unique
+	drop table if exists t_user;
+create table t_user(
+	id int,
+	usercode varchar(255),
+	username varchar(255),
+	unique(usercode,username)  //多个字段联合起来添加一个约束unique 【表级约束】
+  );
+
+insert into t_user values(1,'111','zs');
+insert into t_user values(2,'111','ls');
+insert into t_user values(3,'222','zs');
+select * from t_user;
+insert into t_user values(4,'111','zs');  //出现编译错误！
+ERROR 1062 (23000) : Duplicate entry '111-zs' for key 'usercode'
+
+drop table if exists t_user;
+create table t_suer(
+	id int,
+	usercode varchar(255) unique,
+	username varchar(255) unique
+  );
+insert into t_user values(1,'111','zs');
+insert into t_user values(2,'111','ls');
+ERROR 1062 (23000) : Duplicate entry '111' for key 'usercode'
+* 注意：not null约束只有列级约束，没有表级约束。
+</code></pre></div><h3 id="_1-2、主键约束"><a href="#_1-2、主键约束" class="header-anchor">#</a> 1.2、主键约束</h3> <h4 id="怎么给一张表添加主键约束呢？"><a href="#怎么给一张表添加主键约束呢？" class="header-anchor">#</a> 怎么给一张表添加主键约束呢？</h4> <div class="language- extra-class"><pre><code>  drop table if exists t_user;
+  create table t_user(
+	  id int primary key,  //列级约束
+  username varchar(255),
+  email varchar(255)
+  );
+  insert into t_user(id,username,email) values(1,'zs','zs@123.com');
+  insert into t_user(id,username,email) values(2,'ls','ls@123.com');
+  insert into t_user(id,username,email) values(3,'ww','ww@123.com');
+  select * from t_user;
+	
+  +-----------------------------+
+  | id | username | email       |
+  +-----------------------------+
+  |  1 | zs       | zs@123.com  |
+  |  2 | ls       | ls@123.com  |
+  |  3 | ww       | ww@123.com  |
+  +----+----------+-------------+
+
+
+  insert into t_user(id,username,email) values(1,'jack','jack@123.com');  //出现编译错误，主键约束，不能为null也不能重复！
+  ERROR 1364 (HY000) : Field 'id' doesn't have a default value
+
+  根据以上的测试得出：id是主键，因为添加了主键约束，主键字段中的数据不能为null，也不能重复。
+  主键的特点：不能为null，也不能重复。
+</code></pre></div><h4 id="主键相关的术语？"><a href="#主键相关的术语？" class="header-anchor">#</a> 主键相关的术语？</h4> <div class="language- extra-class"><pre><code>  主键约束 ：primary key
+  主键字段 : id字段添加primary key之后，id叫做主键字段
+  主键值 ：id字段中的每一个值都是主键值。
+</code></pre></div><h4 id="主键有什么作用？"><a href="#主键有什么作用？" class="header-anchor">#</a> 主键有什么作用？</h4> <div class="language- extra-class"><pre><code>  根据主键字段的字段数量来划分：
+	  单一主键 (推荐的，常用的。)
+  复合主键(多个字段联合起来添加一个主键约束) (复合主键不建议使用，因为复合主键违背三范式。)
+  根据主键性质来划分：
+	  自然主键 ：主键值最好就是一个和业务没有任何关系的自然数。(这种方式是推荐的)
+  业务主键 : 主键值和系统的业务挂钩，例如：拿着银行卡的卡号做主键、拿着身份证号做为主键。(不推荐使用)
+			 最好不要拿着和业务挂钩的字段做为主键。因为以后的业务一旦发生改变的时候，主键也可能需要随着
+		 发生变化，但有的时候没有办法变化，因为变化可能会导致主键重复。
+</code></pre></div><h4 id="一张表的主键约束只能有1个。-必须记住"><a href="#一张表的主键约束只能有1个。-必须记住" class="header-anchor">#</a> 一张表的主键约束只能有1个。(必须记住)</h4> <h4 id="使用表级约束方式定义主键："><a href="#使用表级约束方式定义主键：" class="header-anchor">#</a> 使用表级约束方式定义主键：</h4> <div class="language- extra-class"><pre><code>  drop table if exists t_user;
+  create table t_user(
+	  id int,
+  username varchar(255),
+  primary key(id)
+);
+insert into t_user(id,username) values(1,'zs');
+insert into t_user(id,username) values(2,'ls');
+insert into t_user(id,username) values(3,'ws');
+insert into t_user(id,username) values(4,'cs');
+select * from t_user;
+
+insert into t_user(id,username) values(3,'cx');  //出现编译错误！
+ERROR 1062 (23000) : Duplicate entry '4' for key 'PRIMARY'
+
+以下内容是演示一下复合主键，不需要掌握：
+	drop table if exists t_user;
+	create table t_user(
+		id int,
+	username varchar(255),
+	password varchar(255),
+	primary key(id,username)
+	 );
+	insert ......
+</code></pre></div><h4 id="mysql提供主键值自增：-非常重要。"><a href="#mysql提供主键值自增：-非常重要。" class="header-anchor">#</a> mysql提供主键值自增：(非常重要。)</h4> <div class="language- extra-class"><pre><code>  drop table if exists t_user;
+  create table t_user(
+	  id int primary key auto_increment,  //id字段自动维护一个自增的数字，从1开始，以1递增。
+  username varchar(255)
+	);
+  insert into t_user(username) values('a'); 
+  insert into t_user(username) values('b');
+  insert into t_user(username) values('c');
+  insert into t_user(username) values('d');
+  insert into t_user(username) values('e');
+  insert into t_user(username) values('f');
+  select * from t_user;
+
+  提示：Oracle当中也提供了一个自增机制，叫做：序列(sequence)对象。
+</code></pre></div><h3 id="_1-3、外键约束"><a href="#_1-3、外键约束" class="header-anchor">#</a> 1.3、外键约束</h3> <h4 id="关于外键约束的相关术语："><a href="#关于外键约束的相关术语：" class="header-anchor">#</a> 关于外键约束的相关术语：</h4> <div class="language- extra-class"><pre><code>  外键约束：foreign key
+  外键字段：添加有外键约束的字段
+  外键值：外键字段中的每一个值。
+</code></pre></div><h4 id="业务背景："><a href="#业务背景：" class="header-anchor">#</a> 业务背景：</h4> <div class="language- extra-class"><pre><code>  请设计数据库表，用来维护学生和班级的信息？
+	  第一种方案：一张表存储所有数据
+  no(pk)          name          classno         classname
+  -----------------------------------------------------------
+   1               zs1            101          河南省平顶山市舞钢市垭口一高高三1班         
+   2               zs2            101          河南省平顶山市舞钢市垭口一高高三1班 
+   3               zs3            102          河南省平顶山市舞钢市垭口一高高三2班 
+   4               zs4            102          河南省平顶山市舞钢市垭口一高高三2班
+   5               zs5            102          河南省平顶山市舞钢市垭口一高高三2班 
+   缺点：冗余。【不推荐】
+
+   第二种方案：两张表(班级表和学生表)
+
+   t_class 班级表
+   cno(pk)         cname
+   -------------------------------------------------------------
+		101           河南省平顶山市舞钢市垭口一高高三1班 
+	102           河南省平顶山市舞钢市垭口一高高三2班 
+
+	t_student 学生表
+	sno(pk)        sname          classno(该字段添加外键约束fk)
+	-----------------------------------------------------------
+	 1              zs1              101
+	 2              zs2              101
+	 3              zs3              102
+	 4              zs4              102
+	 5              zs5              102
+</code></pre></div><h4 id="将以上表的建表语句写出来："><a href="#将以上表的建表语句写出来：" class="header-anchor">#</a> 将以上表的建表语句写出来：</h4> <div class="language- extra-class"><pre><code>  t_student中的classno字段引用t_class表中的cno字段，此时t_student表叫做子表。t_class表叫做父表。
+  
+  删除数据的时候，先删除子表，再删除父表。
+  添加数据的时候，先添加父表，再添加子表。
+  创建表的时候，先创建父表，再创建子表。
+  删除表的时候，先删除子表，再删除父表。
+
+drop table if exists t_student;
+drop table if exists t_class;
+
+create table t_class(
+   cno int,
+   cname varchar(255),
+   primary key(cno)
+ );
+
+create table t_student(
+	sno int,
+sname varchar(255),
+classno int,
+primary key(sno),
+foreign key(classno) references t_class(cno)
+  );
+
+insert into t_class values(101,'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+insert into t_class values(102,'yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy');
+
+insert into t_student values(1,'zs1',101);
+insert into t_student values(2,'zs2',101);
+insert into t_student values(3,'zs3',102);
+insert into t_student values(4,'zs4',102);
+insert into t_student values(5,'zs5',102);
+insert into t_student values(6,'zs6',102);
+select * from t_class;
+select * from t_student;
+
+insert into t_student values(7,'lisi',103);  //编译错误，引用的103，父表中没有该字段！
+ERROR 1452 (23000) : Cannot add or update a child row :aforeign key constraint fails (bjpowernode INT YT......)
+</code></pre></div><h4 id="外键值可以为null？"><a href="#外键值可以为null？" class="header-anchor">#</a> 外键值可以为NULL？</h4> <div class="language- extra-class"><pre><code>  外键可以为null。
+</code></pre></div><h4 id="外键字段引用其他表的某个字段的时候，被引用的字段必须是主键吗？"><a href="#外键字段引用其他表的某个字段的时候，被引用的字段必须是主键吗？" class="header-anchor">#</a> 外键字段引用其他表的某个字段的时候，被引用的字段必须是主键吗？</h4> <div class="language- extra-class"><pre><code>  注意：被引用的字段不一定是主键，但至少是具有unique约束，具有唯一性，不可重复！
+</code></pre></div><h2 id="_2、存储引擎？"><a href="#_2、存储引擎？" class="header-anchor">#</a> 2、存储引擎？</h2> <h4 id="_2-1、完整的建表语句"><a href="#_2-1、完整的建表语句" class="header-anchor">#</a> 2.1、完整的建表语句</h4> <div class="language- extra-class"><pre><code>   CREATE TABLE `t_x` (
+  `id` int(11) DEFAULT NULL
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8; 
+
+ 注意：在MySQL当中，凡是标识符使用飘号括起来的。最好别用，不通用。
+
+ 建表的时候可以指定存储引擎，也可以指定字符集。
+
+ mysql默认使用的存储引擎是InnoDB方式。
+ 默认采用的字符集是UTF-8。
+</code></pre></div><h3 id="_2-2、什么是存储引擎呢？"><a href="#_2-2、什么是存储引擎呢？" class="header-anchor">#</a> 2.2、什么是存储引擎呢？</h3> <div class="language- extra-class"><pre><code>   存储引擎这个名字只有在mysql中存在。(Oracle中有对应的机制，但不叫做存储引擎。Oracle中没有特殊的名字，就是&quot;表的存储方式&quot;)
+
+   mysql支持很多存储引擎，每个存储引擎都对应了一种不同的存储方式。
+   每一个存储引擎都有自己的优缺点，需要在合适的时机选择合适的存储引擎。
+</code></pre></div><h3 id="_2-3、查看当前mysql支持的存储引擎？"><a href="#_2-3、查看当前mysql支持的存储引擎？" class="header-anchor">#</a> 2.3、查看当前mysql支持的存储引擎？</h3> <div class="language- extra-class"><pre><code>   show engines \G
+
+   mysql 5.5.36版本支持的光速引擎有9个：
+ *************************** 1. row ***************************
+	  Engine: FEDERATED
+	 Support: NO
+	 Comment: Federated MySQL storage engine
+Transactions: NULL
+	  XA: NULL
+  Savepoints: NULL
+*************************** 2. row ***************************
+	  Engine: MRG_MYISAM
+	 Support: YES
+	 Comment: Collection of identical MyISAM tables
+Transactions: NO
+	  XA: NO
+  Savepoints: NO
+*************************** 3. row ***************************
+	  Engine: MyISAM
+	 Support: YES
+	 Comment: MyISAM storage engine
+Transactions: NO
+	  XA: NO
+  Savepoints: NO
+*************************** 4. row ***************************
+	  Engine: BLACKHOLE
+	 Support: YES
+	 Comment: /dev/null storage engine (anything you write to it disappears)
+Transactions: NO
+	  XA: NO
+  Savepoints: NO
+*************************** 5. row ***************************
+	  Engine: CSV
+	 Support: YES
+	 Comment: CSV storage engine
+Transactions: NO
+	  XA: NO
+  Savepoints: NO
+*************************** 6. row ***************************
+	  Engine: MEMORY
+	 Support: YES
+	 Comment: Hash based, stored in memory, useful for temporary tables
+Transactions: NO
+	  XA: NO
+  Savepoints: NO
+*************************** 7. row ***************************
+	  Engine: ARCHIVE
+	 Support: YES
+	 Comment: Archive storage engine
+Transactions: NO
+	  XA: NO
+  Savepoints: NO
+*************************** 8. row ***************************
+	  Engine: InnoDB
+	 Support: DEFAULT
+	 Comment: Supports transactions, row-level locking, and foreign keys
+Transactions: YES
+	  XA: YES
+  Savepoints: YES
+*************************** 9. row ***************************
+	  Engine: PERFORMANCE_SCHEMA
+	 Support: YES
+	 Comment: Performance Schema
+Transactions: NO
+	  XA: NO
+  Savepoints: NO
+</code></pre></div><h3 id="_2-4、常见的存储引擎？"><a href="#_2-4、常见的存储引擎？" class="header-anchor">#</a> 2.4、常见的存储引擎？</h3> <div class="language- extra-class"><pre><code>   Engine: MyISAM
+	 Support: YES
+	 Comment: MyISAM storage engine
+Transactions: NO
+	  XA: NO
+  Savepoints: NO
+
+   MyISAM这种存储引擎不支持事务。
+   MyISAM是mysql最常用的存储引擎，但是这种存储引擎不是默认的。
+   MyISAM采用三个文件组织一个表：
+	   xxx.frm(存储格式的文件)
+   xxx.MYD(存储表中数据的文件)
+   xxx.MYI(存储表中索引的文件)
+   优点：可被压缩，节省存储空间。并且可以转换为只读表，提高检索效率。
+   缺点:不支持事务。
+
+--------------------------------------------------------------------------
+   
+	   Engine: InnoDB
+	 Support: DEFAULT
+	 Comment: Supports transactions, row-level locking, and foreign keys
+Transactions: YES
+	  XA: YES
+  Savepoints: YES
+   
+   优点：支持事务、行级锁、外键等。这种存储引擎数据的安全得到保障。
+
+   表的结构存储在xxx.frm文件中
+   数据存储在tablespace这样的表空间中(逻辑概念)，无法被压缩，无法转换成只读。
+   这种InnoDB存储引擎在MySQL数据库崩溃之后提供自动恢复机制。
+   InoDB支持级联删除和级联更新。
+
+----------------------------------------------------------------------------------
+
+	   Engine: MEMORY
+	 Support: YES
+	 Comment: Hash based, stored in memory, useful for temporary tables
+Transactions: NO
+	  XA: NO
+  Savepoints: NO
+
+  缺点：不支持事务。数据容易丢失。因为所有数据和索引都是存储在内存当中的。
+  优点：查询速度最快。
+  以前叫做HEPA引擎。
+</code></pre></div><h2 id="_3、事务-transaction"><a href="#_3、事务-transaction" class="header-anchor">#</a> 3、事务(Transaction)</h2> <h3 id="_3-1、什么是事务？"><a href="#_3-1、什么是事务？" class="header-anchor">#</a> 3.1、什么是事务？</h3> <div class="language- extra-class"><pre><code>   一个事务是一个完整的业务逻辑单元，不可再分。
+
+   比如：银行账户，从A账户向B账户转账10000元，需要执行两条update语句。
+	   update t_act set balance = balance - 10000 where actno = 'act-001';
+   update t_act set balance = balance + 10000 where actno = 'act-002';
+
+   以上两条DML语句必须同时成功，或者同时失败，不允许出现一条成功，一条失败。
+
+   想要保证以上的两条DML语句同时成功或者同时失败，那么就要使用数据库的&quot;事务机制&quot;。
+</code></pre></div><h3 id="_3-2、和事务相关的语句只有：dml语句。-insert-delete-update"><a href="#_3-2、和事务相关的语句只有：dml语句。-insert-delete-update" class="header-anchor">#</a> 3.2、和事务相关的语句只有：DML语句。(insert delete update)</h3> <div class="language- extra-class"><pre><code>   为什么？因为他们这三个语句都是和数据库表当中的&quot;数据&quot;相关的。
+   事务的存在是为了保证数据的完整性，安全性。
+</code></pre></div><h3 id="_3-3、假设所有的业务都能使用1条dml语句搞定，还需要事务机制吗？"><a href="#_3-3、假设所有的业务都能使用1条dml语句搞定，还需要事务机制吗？" class="header-anchor">#</a> 3.3、假设所有的业务都能使用1条DML语句搞定，还需要事务机制吗？</h3> <div class="language- extra-class"><pre><code>   不需要事务机制。
+   但实际情况不是这样的，通常一个&quot;事儿(事务【业务】)&quot;需要多条DML语句共同联合完成。
+</code></pre></div><h3 id="_3-4、事务的特性？"><a href="#_3-4、事务的特性？" class="header-anchor">#</a> 3.4、事务的特性？</h3> <div class="language- extra-class"><pre><code>事务包括四大特性：ACID
+A:原子性：事务是最小的工作单元，不可再分。
+B:一致性：事务必须保证多条DML语句同时成功或者同时失败。
+C:隔离性：事务A与事务B之间具有隔离。
+D:持久性：持久性说的是最终数据必须持久化到硬盘中，事务才算成功结束。
+</code></pre></div><h3 id="_3-5、关于事务之间的隔离性？"><a href="#_3-5、关于事务之间的隔离性？" class="header-anchor">#</a> 3.5、关于事务之间的隔离性？</h3> <div class="language- extra-class"><pre><code>   事务隔离性存在隔离级别，理论上隔离级别包括4个：
+	   第一级别：读未提交(read uncommitted)
+	   对方事务还没有提交，我们当前事务可以读取到对方未提交的数据。
+	   读未提交存在脏读(Dirty Read) 现象：表示读到了脏数据。
+   第二级别：读已提交(read committed)
+	   对方事务提交之后的数据我方可以读取到。
+	   读已提交存在的问题是：不可重复读。
+   第三级别：可重复读(repeatable read)
+	   这种隔离级别解决了：不可重复读问题。
+	   这种隔离级别存在的问题是：读取到的数据是幻象。
+   第四级别：序列化读/串行化读
+	   解决了所有问题。
+	   效率低，需要事务排队。
+
+   Oracle数据库默认的隔离级别是：第二级别，读已提交。
+   mysql数据库默认的隔离级别是：第三级别，可重复读。
+</code></pre></div><h3 id="_3-6、演示事务："><a href="#_3-6、演示事务：" class="header-anchor">#</a> 3.6、演示事务：</h3> <div class="language- extra-class"><pre><code>   * mysql事务默认情况下是自动提交的。
+	   (什么是自动提交？只要执行任意一条DML语句则提交一次。)怎么关闭默认提交？start transaction;
+
+   * 建表：
+	   drop table if exists t_user;
+   create table t_user(
+	   id int primary key auto_increment,
+	   username varchar(255)
+	 );
+
+   * 演示：mysql中的事务是支持自动提交的，只要执行一条DML语句，则提交一次。
+	   mysql&gt; insert into t_user(username) values('zs');
+   Querk OK, 1 row affected (0.03 sec)
+   mysql&gt; select * from t_user;
+	+----+----------+
+	| id | username |
+	+----+----------+
+	|  1 | zs       |
+	+----+----------+
+   mysql&gt; rollback;
+   Query OK, 0 rows affected (0.00 sec)
+
+	   mysql&gt; select * from t_user;
+	 +----+----------+
+	 | id | username |
+	 +----+----------+
+	 |  1 | zs       |
+	 +----+----------+
+
+* 演示：使用start transaction; 关闭自动提交机制。
+	mysql&gt; select * from t_user;
+	+----+----------+
+	| id | username |
+	+----+----------+
+	|  1 | zs       |
+	+----+----------+
+	1 row in set (0.00 sec)
+
+	mysql&gt; start transaction;
+	Query OK, 0 rows affected (0.00 sec)
+
+	mysql&gt; insert into t_user(username) values(&quot;lisi&quot;);
+	Query OK, 1 row affected (0.00 sec)
+
+	mysql&gt; select * from t_user;
+	+----+----------+
+	| id | username |
+	+----+----------+
+	|  1 | zs       |
+	|  2 | lisi     |
+	+----+----------+
+	2 rows in set (0.00 sec)
+
+	mysql&gt; insert into t_user(username) values(&quot;wangwu&quot;);
+	Query OK, 1 row affected (0.00 sec)
+
+	mysql&gt; select * from t_user;
+	+----+----------+
+	| id | username |
+	+----+----------+
+	|  1 | zs       |
+	|  2 | lisi     |
+	|  3 | wangwu   |
+	+----+----------+
+	3 rows in set (0.00 sec)
+
+	mysql&gt; rollback;    //回滚
+	Query OK, 0 rows affected (0.00 sec)
+
+	mysql&gt; select * from t_user;
+	+----+----------+
+	| id | username |
+	+----+----------+
+	|  1 | zs       |
+	+----+----------+
+	1 row in set (0.00 sec)
+
+	mysql&gt; start transaction;
+	Query OK, 0 rows affected (0.00 sec)
+
+	mysql&gt; insert into t_user(username) values(&quot;wangwu&quot;);
+	Query OK, 1 row affected (0.00 sec)
+
+	mysql&gt; insert into t_user(username) values(&quot;object&quot;);
+	Query OK, 1 row affected (0.00 sec)
+
+	mysql&gt; insert into t_user(username) values(&quot;joke&quot;);
+	Query OK, 1 row affected (0.00 sec)
+
+	mysql&gt; insert into t_user(username) values(&quot;xiaozhaozhao&quot;);
+	Query OK, 1 row affected (0.00 sec)
+
+	mysql&gt; select * from t_user;
+	+----+--------------+
+	| id | username     |
+	+----+--------------+
+	|  1 | zs           |
+	|  4 | wangwu       |
+	|  5 | object       |
+	|  6 | joke         |
+	|  7 | xiaozhaozhao |
+	+----+--------------+
+	5 rows in set (0.00 sec)
+
+	mysql&gt; commit;
+	Query OK, 0 rows affected (0.00 sec)
+
+	mysql&gt; select * from t_user;
+	+----+--------------+
+	| id | username     |
+	+----+--------------+
+	|  1 | zs           |
+	|  4 | wangwu       |
+	|  5 | object       |
+	|  6 | joke         |
+	|  7 | xiaozhaozhao |
+	+----+--------------+
+	5 rows in set (0.00 sec)
+
+	mysql&gt; rollback;
+	Query OK, 0 rows affected (0.00 sec)
+
+	mysql&gt; select * from t_user;
+	+----+--------------+
+	| id | username     |
+	+----+--------------+
+	|  1 | zs           |
+	|  4 | wangwu       |
+	|  5 | object       |
+	|  6 | joke         |
+	|  7 | xiaozhaozhao |
+	+----+--------------+
+	5 rows in set (0.00 sec)
+
+rollback : 回滚。
+commit ： 提交。
+start transaction : 关闭自动提交机制。
+ 
+  -----------------------------------------------------------------
+
+* 演示两个事务，假如隔离级别：
+   演示第1级别：读未提交
+	   set global transaction isolation level read uncommitted;
+   演示第二级别；读已提交
+	   set global transaction isolation level read committed;
+   演示第三级别:可重复读
+	   set global transaction isolation level repeatable read;
+
+*mysql远程登录：mysql -h192.168.151.18 -uroot -p444
+</code></pre></div><h2 id="_4、索引"><a href="#_4、索引" class="header-anchor">#</a> 4、索引</h2> <h3 id="_4-1、什么是索引？有什么用？"><a href="#_4-1、什么是索引？有什么用？" class="header-anchor">#</a> 4.1、什么是索引？有什么用？</h3> <div class="language- extra-class"><pre><code>	索引就相当于一本书的目录，通过目录可以快速的找到对应的资源。
+在数据库方面，查询一张表的时候有两种检索方式：
+	第一种方式：全表扫描
+	第二种方式：根据索引检索(效率很高)
+索引为什么可以提高检索效率呢？
+	其实最根本的原理是缩小了扫描的范围。
+
+索引虽然可以提高检索效率，但是不能随意的添加索引，因为索引也是数据库当中的对象，也需要数据库不断的维护。是有维护成本的。
+比如：表中的数据经常被修改，这样就不适合添加索引，因为数据一旦修改，索引需要重新排序，进行维护。
+
+添加索引是给某一个字段，或者说某些字段添加索引。
+
+select ename,sal from emp where ename = 'SMITH';
+当ename字段没有添加索引的时候，以上sql语句会进行全表扫描，扫描ename字段中所有的值。
+当ename字段添加索引的时候，以上sql语句会根据索引扫描，快速定位。
+</code></pre></div><h3 id="_4-2、怎么创建索引对象？怎么删除索引对象？"><a href="#_4-2、怎么创建索引对象？怎么删除索引对象？" class="header-anchor">#</a> 4.2、怎么创建索引对象？怎么删除索引对象？</h3> <div class="language- extra-class"><pre><code>创建索引对象：
+	create index 索引名称 on 表名(字段名);
+删除索引对象：
+	drop index 索引名称 on 表名;
+</code></pre></div><h3 id="_4-3、什么时候考虑给字段添加索引？-满足什么条件"><a href="#_4-3、什么时候考虑给字段添加索引？-满足什么条件" class="header-anchor">#</a> 4.3、什么时候考虑给字段添加索引？(满足什么条件)</h3> <div class="language- extra-class"><pre><code>   * 数据量庞大。(根据客户的需求，根据线上的环境)
+   * 该字段很少的DML操作。(因为字段进行修改操作，索引也需要维护)
+   * 该字段经常出现在where子句中。(经常根据哪个字段维护)
+</code></pre></div><h3 id="_4-4、注意：主键具有unique约束的字段会自动添加索引。"><a href="#_4-4、注意：主键具有unique约束的字段会自动添加索引。" class="header-anchor">#</a> 4.4、注意：主键具有unique约束的字段会自动添加索引。</h3> <div class="language- extra-class"><pre><code>   根据主键查询效率较高，尽量根据主键检索。
+</code></pre></div><h3 id="_4-5、查看sql语句的执行计划："><a href="#_4-5、查看sql语句的执行计划：" class="header-anchor">#</a> 4.5、查看sql语句的执行计划：</h3> <div class="language- extra-class"><pre><code>   mysql&gt; explain select ename,sal from emp where sal = 5000;
++----+-------------+-------+------+---------------+------+---------+------+------+-------------+
+| id | select_type | table | type | possible_keys | key  | key_len | ref  | rows | Extra       |
++----+-------------+-------+------+---------------+------+---------+------+------+-------------+
+|  1 | SIMPLE      | emp   | ALL  | NULL          | NULL | NULL    | NULL |   14 | Using where |
++----+-------------+-------+------+---------------+------+---------+------+------+-------------+
+
+给薪资sal字段添加索引：
+	create index emp_sal_index on emp(sal);
+
+mysql&gt; explain select ename,sal from emp where sal = 5000;
++----+-------------+-------+------+---------------+---------------+---------+-------+------+-------------+
+| id | select_type | table | type | possible_keys | key           | key_len | ref   | rows | Extra       |
++----+-------------+-------+------+---------------+---------------+---------+-------+------+-------------+
+|  1 | SIMPLE      | emp   | ref  | emp_sal_index | emp_sal_index | 9       | const |    1 | Using where |
++----+-------------+-------+------+---------------+---------------+---------+-------+------+-------------+
+																			  rows检索次数减少了
+</code></pre></div><h3 id="_4-6、索引底层采用的数据结构是：b-tree"><a href="#_4-6、索引底层采用的数据结构是：b-tree" class="header-anchor">#</a> 4.6、索引底层采用的数据结构是：B + Tree</h3> <h3 id="_4-7、索引的实现原理？"><a href="#_4-7、索引的实现原理？" class="header-anchor">#</a> 4.7、索引的实现原理？</h3> <div class="language- extra-class"><pre><code>   通过B Tree缩小扫描范围，底层索引进行了排序，分区，索引会携带数据在表中的&quot;物理地址&quot;，最终通过索引检索到数据之后，获取到关联的物理地址，
+   通过物理索引检索到数据之后，获取到关联的物理地址，通过物理地址定位表中的数据，效率是最高的。
+	   select ename from emp where ename = 'SMITH';
+   通过索引转换为：
+   select ename from emp where  物理地址 = 0x123;
+</code></pre></div><h3 id="_4-8、索引的分类？"><a href="#_4-8、索引的分类？" class="header-anchor">#</a> 4.8、索引的分类？</h3> <div class="language- extra-class"><pre><code>   单一索引：给单个字段添加索引
+   复合索引：给多个字段联合起来添加一个索引
+   主键索引：主键上会自动添加索引
+   唯一索引：有unique约束的字段会自动添加索引
+   ......
+</code></pre></div><h3 id="_4-9、索引什么时候失效？"><a href="#_4-9、索引什么时候失效？" class="header-anchor">#</a> 4.9、索引什么时候失效？</h3> <div class="language- extra-class"><pre><code>   select ename from emp where ename like ' %A% ';
+   模糊查询的时候，第一个通配符使用的是%，这个时候索引是是失效的。
+</code></pre></div><h2 id="_5、视图-view"><a href="#_5、视图-view" class="header-anchor">#</a> 5、视图(view)</h2> <h3 id="_5-1、什么是视图？"><a href="#_5-1、什么是视图？" class="header-anchor">#</a> 5.1、什么是视图？</h3> <div class="language- extra-class"><pre><code>   站在不同的角度去看到数据。(同一张表的数据，通过不同的角度去看待)
+</code></pre></div><h3 id="_5-2、怎么创建视图？怎么删除视图？"><a href="#_5-2、怎么创建视图？怎么删除视图？" class="header-anchor">#</a> 5.2、怎么创建视图？怎么删除视图？</h3> <div class="language- extra-class"><pre><code>create view myview as select empno,ename from emp;
+drop view myview;
+
+注意：只有DQL语句才能以试图对象的方式创建出来。
+</code></pre></div><h3 id="_5-3、对试图进行增删改查，会影响到原表数据。-通过视图影响原表数据，不是直接操作的原表"><a href="#_5-3、对试图进行增删改查，会影响到原表数据。-通过视图影响原表数据，不是直接操作的原表" class="header-anchor">#</a> 5.3、对试图进行增删改查，会影响到原表数据。(通过视图影响原表数据，不是直接操作的原表)</h3> <div class="language- extra-class"><pre><code>可以对试图进行CRUD操作。
+</code></pre></div><h3 id="_5-4、面向视图操作？"><a href="#_5-4、面向视图操作？" class="header-anchor">#</a> 5.4、面向视图操作？</h3> <div class="language- extra-class"><pre><code>mysql&gt; select * from myview;
++-------+--------+
+| empno | ename  |
++-------+--------+
+|  7369 | SMITH  |
+|  7499 | ALLEN  |
+|  7521 | WARD   |
+|  7566 | JONES  |
+|  7654 | MARTIN |
+|  7698 | BLAKE  |
+|  7782 | CLARK  |
+|  7788 | SCOTT  |
+|  7839 | KING   |
+|  7844 | TURNER |
+|  7876 | ADAMS  |
+|  7900 | JAMES  |
+|  7902 | FORD   |
+|  7934 | MILLER |
++-------+--------+
+
+  create table emp_bak as select * from emp;
+  create view myview1 as select empno,ename,sal from emp_bak;
+  update myview1 set ename = 'hehe',sal = 1 where empno 7369;  //通过视图修改原表数据。
+  delete from myview1 where empno = 7369;  //通过试图删除原表数据。
+</code></pre></div><h3 id="_5-5、试图的作用？"><a href="#_5-5、试图的作用？" class="header-anchor">#</a> 5.5、试图的作用？</h3> <div class="language- extra-class"><pre><code>   试图可以隐藏表的实现细节。保密级别较高的系统，数据库只对外提供相关的视图，java程序员只对视图对象进行CRUD。
+</code></pre></div><h2 id="_6、dba命令"><a href="#_6、dba命令" class="header-anchor">#</a> 6、DBA命令</h2> <h3 id="_6-1、在数据库当中的数据导出"><a href="#_6-1、在数据库当中的数据导出" class="header-anchor">#</a> 6.1、在数据库当中的数据导出</h3> <div class="language- extra-class"><pre><code>	在windows的DOS命令窗口中执行： (导出整个库)
+	mysqldump bjpowernode&gt;D:\bjpowernode.sql -uroot -p999
+在windows的dos命令窗口中执行：(导出数据库中指定的表)
+	mysqldump bjpowernode emp&gt;D:\bjpowernode.sql -uroot -p999
+</code></pre></div><h3 id="_6-2、导入数据"><a href="#_6-2、导入数据" class="header-anchor">#</a> 6.2、导入数据</h3> <div class="language- extra-class"><pre><code>	create database bjpowernode;
+use bjpowernode;
+source D:\bjpowernode.sql 
+</code></pre></div><h2 id="_7、数据库设计三范式-重点内容，面试经常会问"><a href="#_7、数据库设计三范式-重点内容，面试经常会问" class="header-anchor">#</a> 7、数据库设计三范式(重点内容，面试经常会问)</h2> <h3 id="_7-1、什么是设计范式？"><a href="#_7-1、什么是设计范式？" class="header-anchor">#</a> 7.1、什么是设计范式？</h3> <div class="language- extra-class"><pre><code>	设计表的依据。按照这三个范式设计的表不会出现数据冗余。
+</code></pre></div><h3 id="_7-2、三范式都是哪些？"><a href="#_7-2、三范式都是哪些？" class="header-anchor">#</a> 7.2、三范式都是哪些？</h3> <div class="language- extra-class"><pre><code>第一范式：任何一张表都应该有主键，并且每一个字段原子性不可再分。
+
+第二范式：建立在第一范式的基础上，所有非主键字段完全依赖主键，不能产生部份依赖。
+	多对多？三张表，关系表两个外键。
+	t_student学生表
+	sno(pk)       sname
+	---------------------
+	 1             张三
+	 2             李四 
+	 3             王五
+
+	 t_teacher 讲师表
+	 tno(pk)            tname
+	 ----------------------
+	  1			王老师
+	  2			张老师
+	  3			李老师
+
+	  t_student_teacher_relation 学生讲师关系表
+	  id(pk)        sno(fk)          tno(fk)
+	  -------------------------------------------
+	   1	      1                 3
+	   2	      1			1
+	   3	      2			2
+	   4	      2			3
+	   5	      3			1
+	   6	      3			3
+
+第三范式：建立在第二范式的基础上，所有非主键字段直接依赖主键，不能产生传递依赖。
+	一对多？两张表，多的表加外键。
+	班级t_class
+	cno(pk)          cname
+	--------------------------
+	  1              班级1
+	  2              班级2
+
+	学生t_student
+	sno(pk)         sname         classno(fk)
+	--------------------------------------------
+	 101	     张1	      1
+	 102             张2	      2
+	 103	     张3	      2
+	 104	     张4	      1
+	 105	     张5	      2
+
+  提醒：在实际的开发中，以满足客户需求为主，有的时候会拿冗余换执行速度。
+</code></pre></div><h3 id="_7-3、一对一怎么设计？"><a href="#_7-3、一对一怎么设计？" class="header-anchor">#</a> 7.3、一对一怎么设计？</h3> <div class="language- extra-class"><pre><code>一对一设计有两种方案：主键共享
+t_user_login 用户登陆表
+id(pk)       username        password
+----------------------------------------
+ 1             zs                123
+ 2             ls                456
+ 
+ t_user_detail 用户详细信息表
+  id(pk+fk)         realname          tel          ...
+ ----------------------------------------------------
+	1              张三            11111111112234
+2	       李四            12112523432412
+</code></pre></div><h4 id="一对一设计有两种方案-外键唯一。"><a href="#一对一设计有两种方案-外键唯一。" class="header-anchor">#</a> 一对一设计有两种方案:外键唯一。</h4> <div class="language- extra-class"><pre><code>t_user_login 用户登陆表
+id(pk)       username        password
+----------------------------------------
+ 1             zs                123
+ 2             ls                456
+ 
+ t_user_detail 用户详细信息表
+  id(pk)         realname          tel            userid(fk+unique)      
+ ----------------------------------------------------
+   1                张三         111111114          2
+   2	        李四         121432412          1
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/pages/MySQL/day03.html" class="prev">
+        MySQL基础
+      </a></span> <span class="next"><a href="/pages/MySQL/lesson.html">
+        练习题34道
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.b653f105.js" defer></script><script src="/assets/js/2.99d1a617.js" defer></script><script src="/assets/js/32.4bbadcf2.js" defer></script>
+  </body>
+</html>

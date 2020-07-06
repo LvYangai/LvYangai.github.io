@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>08 JSP MVC EL JSTL | Hello VuePress</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="Just playing around">
+    <link rel="preload" href="/assets/css/0.styles.80b48331.css" as="style"><link rel="preload" href="/assets/js/app.b653f105.js" as="script"><link rel="preload" href="/assets/js/2.99d1a617.js" as="script"><link rel="preload" href="/assets/js/7.041e9117.js" as="script"><link rel="prefetch" href="/assets/js/10.800b72c9.js"><link rel="prefetch" href="/assets/js/11.57accf41.js"><link rel="prefetch" href="/assets/js/12.13fbcf8c.js"><link rel="prefetch" href="/assets/js/13.4d2d664d.js"><link rel="prefetch" href="/assets/js/14.910991c0.js"><link rel="prefetch" href="/assets/js/15.1313f354.js"><link rel="prefetch" href="/assets/js/16.6db479e6.js"><link rel="prefetch" href="/assets/js/17.2f448bc3.js"><link rel="prefetch" href="/assets/js/18.30dabd53.js"><link rel="prefetch" href="/assets/js/19.d2eaaaad.js"><link rel="prefetch" href="/assets/js/20.89b76482.js"><link rel="prefetch" href="/assets/js/21.c3198162.js"><link rel="prefetch" href="/assets/js/22.f98eeba2.js"><link rel="prefetch" href="/assets/js/23.b9aba8a3.js"><link rel="prefetch" href="/assets/js/24.3e956e2a.js"><link rel="prefetch" href="/assets/js/25.b1b78e1c.js"><link rel="prefetch" href="/assets/js/26.cf1a8b48.js"><link rel="prefetch" href="/assets/js/27.d5bfcc65.js"><link rel="prefetch" href="/assets/js/28.953cb79b.js"><link rel="prefetch" href="/assets/js/29.8a492853.js"><link rel="prefetch" href="/assets/js/3.3388cb9e.js"><link rel="prefetch" href="/assets/js/30.b01648fa.js"><link rel="prefetch" href="/assets/js/31.4e91fc6c.js"><link rel="prefetch" href="/assets/js/32.4bbadcf2.js"><link rel="prefetch" href="/assets/js/33.d052232e.js"><link rel="prefetch" href="/assets/js/34.33e965c9.js"><link rel="prefetch" href="/assets/js/35.0ddaddcd.js"><link rel="prefetch" href="/assets/js/36.edb41847.js"><link rel="prefetch" href="/assets/js/37.8e9c2d1f.js"><link rel="prefetch" href="/assets/js/4.dc746784.js"><link rel="prefetch" href="/assets/js/5.d434ae10.js"><link rel="prefetch" href="/assets/js/6.7eb90bfc.js"><link rel="prefetch" href="/assets/js/8.9ce2df1b.js"><link rel="prefetch" href="/assets/js/9.e3ac39ca.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.80b48331.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Hello VuePress</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/pages/JavaScript/" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue学习" class="dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Vue/入门.html" class="nav-link">
+  Vue入门
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Vue/进阶.html" class="nav-link">
+  Vue进阶
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JAVA学习" class="dropdown-title"><span class="title">JAVA</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Vue/入门.html" class="nav-link">
+  JAVA
+</a></li><li class="dropdown-item"><!----> <a href="/pages/JAVA/JavaWeb/" class="nav-link router-link-active">
+  JAVAWeb
+</a></li><li class="dropdown-item"><!----> <a href="/pages/JAVA/数据结构与算法/" class="nav-link">
+  数据结构与算法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL学习" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/MySQL/" class="nav-link">
+  MySQL
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/pages/JavaScript/" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue学习" class="dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Vue/入门.html" class="nav-link">
+  Vue入门
+</a></li><li class="dropdown-item"><!----> <a href="/pages/Vue/进阶.html" class="nav-link">
+  Vue进阶
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JAVA学习" class="dropdown-title"><span class="title">JAVA</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/Vue/入门.html" class="nav-link">
+  JAVA
+</a></li><li class="dropdown-item"><!----> <a href="/pages/JAVA/JavaWeb/" class="nav-link router-link-active">
+  JAVAWeb
+</a></li><li class="dropdown-item"><!----> <a href="/pages/JAVA/数据结构与算法/" class="nav-link">
+  数据结构与算法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL学习" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/MySQL/" class="nav-link">
+  MySQL
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/pages/JavaScript/" class="sidebar-heading clickable"><span>JavaScript</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/JavaScript/day10.html" class="sidebar-link">对象&amp;函数</a></li><li><a href="/pages/JavaScript/day11.html" class="sidebar-link">知道</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/pages/Vue/" class="sidebar-heading clickable"><span>Vue学习</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/Vue/入门.html" class="sidebar-link">Vue入门</a></li><li><a href="/pages/Vue/进阶.html" class="sidebar-link">Vue进阶</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/pages/JAVA/JavaWeb/" class="sidebar-heading clickable router-link-active open"><span>JavaWeb</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/JAVA/JavaWeb/Servlet&amp;Request&amp;案例.html" class="sidebar-link">Servlet&amp;Request</a></li><li><a href="/pages/JAVA/JavaWeb/Response.html" class="sidebar-link">Response</a></li><li><a href="/pages/JAVA/JavaWeb/Cookie&amp;Session笔记.html" class="sidebar-link">Cookie&amp;Session</a></li><li><a href="/pages/JAVA/JavaWeb/EL&amp;JSTL笔记.html" class="active sidebar-link">EL&amp;STL</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/JAVA/JavaWeb/EL&amp;JSTL笔记.html#jsp" class="sidebar-link">JSP:</a></li><li class="sidebar-sub-header"><a href="/pages/JAVA/JavaWeb/EL&amp;JSTL笔记.html#mvc：开发模式" class="sidebar-link">MVC：开发模式</a></li><li class="sidebar-sub-header"><a href="/pages/JAVA/JavaWeb/EL&amp;JSTL笔记.html#el表达式" class="sidebar-link">EL表达式</a></li><li class="sidebar-sub-header"><a href="/pages/JAVA/JavaWeb/EL&amp;JSTL笔记.html#jstl" class="sidebar-link">JSTL</a></li><li class="sidebar-sub-header"><a href="/pages/JAVA/JavaWeb/EL&amp;JSTL笔记.html#三层架构：软件设计架构" class="sidebar-link">三层架构：软件设计架构</a></li><li class="sidebar-sub-header"><a href="/pages/JAVA/JavaWeb/EL&amp;JSTL笔记.html#案例：用户信息列表展示" class="sidebar-link">案例：用户信息列表展示</a></li></ul></li><li><a href="/pages/JAVA/JavaWeb/Filter&amp;Listener笔记.html" class="sidebar-link">Filter&amp;Listener</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/pages/JAVA/数据结构与算法/" class="sidebar-heading clickable"><span>数据结构与算法</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/JAVA/数据结构与算法/第一章.html" class="sidebar-link">一、内容介绍</a></li><li><a href="/pages/JAVA/数据结构与算法/第二章.html" class="sidebar-link">二、数据结构和算法关系</a></li><li><a href="/pages/JAVA/数据结构与算法/第三章.html" class="sidebar-link">三、稀疏数组和队列</a></li><li><a href="/pages/JAVA/数据结构与算法/第四章.html" class="sidebar-link">四、链表</a></li><li><a href="/pages/JAVA/数据结构与算法/第五章.html" class="sidebar-link">五、栈</a></li><li><a href="/pages/JAVA/数据结构与算法/第六章.html" class="sidebar-link">六、递归</a></li><li><a href="/pages/JAVA/数据结构与算法/第七章.html" class="sidebar-link">七、排序</a></li><li><a href="/pages/JAVA/数据结构与算法/第八章.html" class="sidebar-link">八、查找</a></li><li><a href="/pages/JAVA/数据结构与算法/第九章.html" class="sidebar-link">九、哈希表</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/pages/MySQL/" class="sidebar-heading clickable"><span>MySQL</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/MySQL/day01.html" class="sidebar-link">MySQL基本命令</a></li><li><a href="/pages/MySQL/day02.html" class="sidebar-link">MySQL入门</a></li><li><a href="/pages/MySQL/day03.html" class="sidebar-link">MySQL基础</a></li><li><a href="/pages/MySQL/day04.html" class="sidebar-link">MySQL进阶</a></li><li><a href="/pages/MySQL/lesson.html" class="sidebar-link">练习题34道</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_08-jsp-mvc-el-jstl"><a href="#_08-jsp-mvc-el-jstl" class="header-anchor">#</a> 08 JSP MVC EL JSTL</h1> <div class="language- extra-class"><pre><code>1. JSP:
+	1. 指令
+	2. 注释
+	3. 内置对象
+
+2. MVC开发模式
+3. EL表达式
+4. JSTL标签
+5. 三层架构
+</code></pre></div><h2 id="jsp"><a href="#jsp" class="header-anchor">#</a> JSP:</h2> <div class="language- extra-class"><pre><code>1. 指令
+	* 作用：用于配置JSP页面，导入资源文件
+	* 格式：
+		&lt;%@ 指令名称 属性名1=属性值1 属性名2=属性值2 ... %&gt;
+	* 分类：
+		1. page		： 配置JSP页面的
+			* contentType：等同于response.setContentType()
+				1. 设置响应体的mime类型以及字符集
+				2. 设置当前jsp页面的编码（只能是高级的IDE才能生效，如果使用低级工具，则需要设置pageEncoding属性设置当前页面的字符集）
+			* import：导包
+			* errorPage：当前页面发生异常后，会自动跳转到指定的错误页面
+			* isErrorPage：标识当前也是是否是错误页面。
+				* true：是，可以使用内置对象exception
+				* false：否。默认值。不可以使用内置对象exception
+
+
+		2. include	： 页面包含的。导入页面的资源文件
+			* &lt;%@include file=&quot;top.jsp&quot;%&gt;
+		3. taglib	： 导入资源
+			* &lt;%@ taglib prefix=&quot;c&quot; uri=&quot;http://java.sun.com/jsp/jstl/core&quot; %&gt;
+				* prefix：前缀，自定义的
+2. 注释:
+	1. html注释：
+		&lt;!-- --&gt;:只能注释html代码片段
+	2. jsp注释：推荐使用
+		&lt;%-- --%&gt;：可以注释所有
+
+
+3. 内置对象
+	* 在jsp页面中不需要创建，直接使用的对象
+	* 一共有9个：
+			变量名					真实类型						作用
+		* pageContext				PageContext					当前页面共享数据，还可以获取其他八个内置对象
+		* request					HttpServletRequest			一次请求访问的多个资源(转发)
+		* session					HttpSession					一次会话的多个请求间
+		* application				ServletContext				所有用户间共享数据
+		* response					HttpServletResponse			响应对象
+		* page						Object						当前页面(Servlet)的对象  this
+		* out						JspWriter					输出对象，数据输出到页面上
+		* config					ServletConfig				Servlet的配置对象
+		* exception					Throwable					异常对象
+</code></pre></div><h2 id="mvc：开发模式"><a href="#mvc：开发模式" class="header-anchor">#</a> MVC：开发模式</h2> <div class="language- extra-class"><pre><code>1. jsp演变历史
+	1. 早期只有servlet，只能使用response输出标签数据，非常麻烦
+	2. 后来又jsp，简化了Servlet的开发，如果过度使用jsp，在jsp中即写大量的java代码，有写html表，造成难于维护，难于分工协作
+	3. 再后来，java的web开发，借鉴mvc开发模式，使得程序的设计更加合理性
+
+2. MVC：
+	1. M：Model，模型。JavaBean
+		* 完成具体的业务操作，如：查询数据库，封装对象
+	2. V：View，视图。JSP
+		* 展示数据
+	3. C：Controller，控制器。Servlet
+		* 获取用户的输入
+		* 调用模型
+		* 将数据交给视图进行展示
+</code></pre></div><p><img src="/java/javaweb/EL&amp;JSTL%E7%AC%94%E8%AE%B0_files/1.jpg" alt="MVC设计模式"></p> <div class="language- extra-class"><pre><code>	* 优缺点：
+		1. 优点：
+			1. 耦合性低，方便维护，可以利于分工协作
+			2. 重用性高
+
+		2. 缺点：
+			1. 使得项目架构变得复杂，对开发人员要求高
+</code></pre></div><h2 id="el表达式"><a href="#el表达式" class="header-anchor">#</a> EL表达式</h2> <div class="language- extra-class"><pre><code>1. 概念：Expression Language 表达式语言
+2. 作用：替换和简化jsp页面中java代码的编写
+3. 语法：${表达式}
+4. 注意：
+	* jsp默认支持el表达式的。如果要忽略el表达式
+		1. 设置jsp中page指令中：isELIgnored=&quot;true&quot; 忽略当前jsp页面中所有的el表达式
+		2. \${表达式} ：忽略当前这个el表达式
+
+
+5. 使用：
+	1. 运算：
+		* 运算符：
+			1. 算数运算符： + - * /(div) %(mod)
+			2. 比较运算符： &gt; &lt; &gt;= &lt;= == !=
+			3. 逻辑运算符： &amp;&amp;(and) ||(or) !(not)
+			4. 空运算符： empty
+				* 功能：用于判断字符串、集合、数组对象是否为null或者长度是否为0
+				* ${empty list}:判断字符串、集合、数组对象是否为null或者长度为0
+				* ${not empty str}:表示判断字符串、集合、数组对象是否不为null 并且 长度&gt;0
+	2. 获取值
+		1. el表达式只能从域对象中获取值
+		2. 语法：
+			1. ${域名称.键名}：从指定域中获取指定键的值
+				* 域名称：
+					1. pageScope		--&gt; pageContext
+					2. requestScope 	--&gt; request
+					3. sessionScope 	--&gt; session
+					4. applicationScope --&gt; application（ServletContext）
+				* 举例：在request域中存储了name=张三
+				* 获取：${requestScope.name}
+
+			2. ${键名}：表示依次从最小的域中查找是否有该键对应的值，直到找到为止。
+
+			
+			
+			3. 获取对象、List集合、Map集合的值
+				1. 对象：${域名称.键名.属性名}
+					* 本质上会去调用对象的getter方法
+
+				2. List集合：${域名称.键名[索引]}
+
+				3. Map集合：
+					* ${域名称.键名.key名称}
+					* ${域名称.键名[&quot;key名称&quot;]}
+
+
+	3. 隐式对象：
+		* el表达式中有11个隐式对象
+		* pageContext：
+			* 获取jsp其他八个内置对象
+				* ${pageContext.request.contextPath}：动态获取虚拟目录
+</code></pre></div><h2 id="jstl"><a href="#jstl" class="header-anchor">#</a> JSTL</h2> <div class="language- extra-class"><pre><code>1. 概念：JavaServer Pages Tag Library  JSP标准标签库
+	* 是由Apache组织提供的开源的免费的jsp标签		&lt;标签&gt;
+
+2. 作用：用于简化和替换jsp页面上的java代码		
+
+3. 使用步骤：
+	1. 导入jstl相关jar包
+	2. 引入标签库：taglib指令：  &lt;%@ taglib %&gt;
+	3. 使用标签
+
+4. 常用的JSTL标签
+	1. if:相当于java代码的if语句
+		1. 属性：
+            * test 必须属性，接受boolean表达式
+                * 如果表达式为true，则显示if标签体内容，如果为false，则不显示标签体内容
+                * 一般情况下，test属性值会结合el表达式一起使用
+   		 2. 注意：
+       		 * c:if标签没有else情况，想要else情况，则可以在定义一个c:if标签
+			 
+		3.代码
+		&lt;pre&gt;
+		&lt;%--
+		
+		c:if标签
+		    1. 属性：
+		        * test 必须属性，接受boolean表达式
+		            * 如果表达式为true，则显示if标签体内容，如果为false，则不显示标签体内容
+		            * 一般情况下，test属性值会结合el表达式一起使用
+		
+		    2. 注意：c:if标签没有else情况，想要else情况，则可以在定义一个c:if标签
+		
+		
+		--%&gt;
+		
+		&lt;c:if test=&quot;true&quot;&gt;
+		    &lt;h1&gt;我是真...&lt;/h1&gt;
+		&lt;/c:if&gt;
+		&lt;br&gt;
+		
+		&lt;%
+		    //判断request域中的一个list集合是否为空，如果不为null则显示遍历集合
+		
+		    List list = new ArrayList();
+		    list.add(&quot;aaaa&quot;);
+		    request.setAttribute(&quot;list&quot;,list);
+		
+		    request.setAttribute(&quot;number&quot;,4);
+		
+		%&gt;
+		
+		&lt;c:if test=&quot;${not empty list}&quot;&gt;
+		    遍历集合...
+		
+		&lt;/c:if&gt;
+		&lt;br&gt;
+		
+		&lt;c:if test=&quot;${number % 2 != 0}&quot;&gt;
+		
+		        ${number}为奇数
+		
+		&lt;/c:if&gt;
+		
+		&lt;c:if test=&quot;${number % 2 == 0}&quot;&gt;
+		
+		    ${number}为偶数
+		
+		&lt;/c:if&gt;
+		&lt;/pre&gt;
+	2. choose:相当于java代码的switch语句
+		1. 使用choose标签声明         			相当于switch声明
+        2. 使用when标签做判断         			相当于case
+        3. 使用otherwise标签做其他情况的声明    	相当于default
+		4.代码
+		&lt;pre&gt;
+		&lt;%--
+		    完成数字编号对应星期几案例
+		        1.域中存储一数字
+		        2.使用choose标签取出数字         相当于switch声明
+		        3.使用when标签做数字判断         相当于case
+		        4.otherwise标签做其他情况的声明  相当于default
+		--%&gt;
+		
+		&lt;%
+		    request.setAttribute(&quot;number&quot;,51);
+		%&gt;
+		
+		&lt;c:choose&gt;
+		    &lt;c:when test=&quot;${number == 1}&quot;&gt;星期一&lt;/c:when&gt;
+		    &lt;c:when test=&quot;${number == 2}&quot;&gt;星期二&lt;/c:when&gt;
+		    &lt;c:when test=&quot;${number == 3}&quot;&gt;星期三&lt;/c:when&gt;
+		    &lt;c:when test=&quot;${number == 4}&quot;&gt;星期四&lt;/c:when&gt;
+		    &lt;c:when test=&quot;${number == 5}&quot;&gt;星期五&lt;/c:when&gt;
+		    &lt;c:when test=&quot;${number == 6}&quot;&gt;星期六&lt;/c:when&gt;
+		    &lt;c:when test=&quot;${number == 7}&quot;&gt;星期天&lt;/c:when&gt;
+		
+		    &lt;c:otherwise&gt;数字输入有误&lt;/c:otherwise&gt;
+		&lt;/c:choose&gt;
+		&lt;/pre&gt;
+	3. foreach:相当于java代码的for语句
+	代码：
+	&lt;pre&gt;
+	
+	&lt;%--
+	
+	    foreach:相当于java代码的for语句
+	        1. 完成重复的操作
+	            for(int i = 0; i &lt; 10; i ++){
+	
+	            }
+	            * 属性：
+	                begin：开始值
+	                end：结束值
+	                var：临时变量
+	                step：步长
+	                varStatus:循环状态对象
+	                    index:容器中元素的索引，从0开始
+	                    count:循环次数，从1开始
+	        2. 遍历容器
+	            List&lt;User&gt; list;
+	            for(User user : list){
+	
+	            }
+	
+	            * 属性：
+	                items:容器对象
+	                var:容器中元素的临时变量
+	                varStatus:循环状态对象
+	                    index:容器中元素的索引，从0开始
+	                    count:循环次数，从1开始
+	
+	
+	--%&gt;
+	
+	&lt;c:forEach begin=&quot;1&quot; end=&quot;10&quot; var=&quot;i&quot; step=&quot;2&quot; varStatus=&quot;s&quot;&gt;
+	    ${i} &lt;h3&gt;${s.index}&lt;h3&gt; &lt;h4&gt; ${s.count} &lt;/h4&gt;&lt;br&gt;
+	
+	&lt;/c:forEach&gt;
+	
+	    &lt;hr&gt;
+	
+	
+	    &lt;%
+	        List list = new ArrayList();
+	        list.add(&quot;aaa&quot;);
+	        list.add(&quot;bbb&quot;);
+	        list.add(&quot;ccc&quot;);
+	
+	        request.setAttribute(&quot;list&quot;,list);
+	
+	
+	    %&gt;
+	
+	    &lt;c:forEach items=&quot;${list}&quot; var=&quot;str&quot; varStatus=&quot;s&quot;&gt;
+	
+	            ${s.index} ${s.count} ${str}&lt;br&gt;
+	
+	    &lt;/c:forEach&gt;
+	
+	&lt;/pre&gt;
+
+5. 练习：
+	* 需求：在request域中有一个存有User对象的List集合。需要使用jstl+el将list集合数据展示到jsp页面的表格table中
+</code></pre></div><h2 id="三层架构：软件设计架构"><a href="#三层架构：软件设计架构" class="header-anchor">#</a> 三层架构：软件设计架构</h2> <div class="language- extra-class"><pre><code>1. 界面层(表示层)：用户看的得界面。用户可以通过界面上的组件和服务器进行交互
+2. 业务逻辑层：处理业务逻辑的。
+3. 数据访问层：操作数据存储文件。
+</code></pre></div><h2 id="案例：用户信息列表展示"><a href="#案例：用户信息列表展示" class="header-anchor">#</a> 案例：用户信息列表展示</h2> <div class="language- extra-class"><pre><code>1. 需求：用户信息的增删改查操作
+2. 设计：
+	1. 技术选型：Servlet+JSP+MySQL+JDBCTempleat+Duird+BeanUtilS+tomcat
+	2. 数据库设计：
+		create database day17; -- 创建数据库
+		use day17; 			   -- 使用数据库
+		create table user(   -- 创建表
+			id int primary key auto_increment,
+			name varchar(20) not null,
+			gender varchar(5),
+			age int,
+			address varchar(32),
+			qq	varchar(20),
+			email varchar(50)
+		);
+
+3. 开发：
+	1. 环境搭建
+		1. 创建数据库环境
+		2. 创建项目，导入需要的jar包
+
+	2. 编码
+
+
+4. 测试
+5. 部署运维
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/pages/JAVA/JavaWeb/Cookie&amp;Session笔记.html" class="prev">
+        Cookie&amp;Session
+      </a></span> <span class="next"><a href="/pages/JAVA/JavaWeb/Filter&amp;Listener笔记.html">
+        Filter&amp;Listener
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.b653f105.js" defer></script><script src="/assets/js/2.99d1a617.js" defer></script><script src="/assets/js/7.041e9117.js" defer></script>
+  </body>
+</html>
